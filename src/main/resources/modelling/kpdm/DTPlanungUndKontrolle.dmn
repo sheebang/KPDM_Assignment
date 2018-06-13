@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/DMN/20151101/dmn.xsd" xmlns:camunda="http://camunda.org/schema/1.0/dmn" id="Definitions_0wp26de" name="DRD" namespace="http://camunda.org/schema/1.0/dmn">
+  <decision id="Decision_13nyhjf" name="Decision 1">
+    <decisionTable id="decisionTable_1">
+      <input id="input_1" label="Purpose" camunda:inputVariable="FormField_1j1miq0">
+        <inputExpression id="inputExpression_1" typeRef="string">
+          <text></text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_15dk0so" label="Scope">
+        <inputExpression id="LiteralExpression_03kjx2u" typeRef="string">
+          <text></text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_0jtelwa" label="Infrastruktur">
+        <inputExpression id="LiteralExpression_0cheuzq" typeRef="boolean">
+          <text></text>
+        </inputExpression>
+      </input>
+      <output id="OutputClause_0c6yse5" label="Unterschriftspartei 1" name="Signer1" typeRef="string" />
+      <rule id="DecisionRule_1bzraaj">
+        <inputEntry id="UnaryTests_0mjrxvr">
+          <text>"_2.8"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0qosdsj">
+          <text>"gesamtunternehmerisch"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0sobbcl">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1yc8zis">
+          <text>"VR"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_174zb4i">
+        <inputEntry id="UnaryTests_1iuvrsb">
+          <text>"_2.8"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_18jxu0h">
+          <text>"geschäftsbereichsübergreifend"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_165xzx5">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1fst1tm">
+          <text>"GL"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1j7qimo">
+        <inputEntry id="UnaryTests_18vwcro">
+          <text>"_2.8"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_098npea">
+          <text>"bereichsintern"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1t2dab0">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0kdx5ur">
+          <text>"GB"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0n9li0u">
+        <inputEntry id="UnaryTests_0cvfrc4">
+          <text>"_2.8.1"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_172pa26">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0czmqja">
+          <text>true</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0scuw3k">
+          <text>"GB"</text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+</definitions>

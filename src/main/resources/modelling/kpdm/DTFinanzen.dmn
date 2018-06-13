@@ -1,0 +1,948 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/DMN/20151101/dmn.xsd" xmlns:camunda="http://camunda.org/schema/1.0/dmn" id="Definitions_0m281l6" name="DRD" namespace="http://camunda.org/schema/1.0/dmn">
+  <decision id="Decision_13nyxhf" name="Decision 1">
+    <decisionTable id="decisionTable_1">
+      <input id="input_1" label="Purpose" camunda:inputVariable="kompetenzfinanzen">
+        <inputExpression id="inputExpression_1" typeRef="string">
+          <text></text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_14teo2o" label="Amount" camunda:inputVariable="betragshoehe">
+        <inputExpression id="LiteralExpression_08s54bk" typeRef="integer">
+          <text></text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_1xz2fv5" label="Sofortmassnahme">
+        <inputExpression id="LiteralExpression_1qqtsva" typeRef="boolean">
+          <text></text>
+        </inputExpression>
+      </input>
+      <output id="output_1" label="Unterschriftspartei 1" name="Signer1" typeRef="string" />
+      <output id="OutputClause_17yqecf" label="Unterschriftspartei 2" name="Signer2" typeRef="string" />
+      <output id="OutputClause_0uf4sgh" label="Unterschriftspartei 3" name="Signer3" typeRef="string" />
+      <rule id="DecisionRule_1iez3p3">
+        <inputEntry id="UnaryTests_18elqvz">
+          <text>"_3.6"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0z1qlj7">
+          <text>&gt;= 5000000</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1osxf3b">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1rwqvmm">
+          <text>"VR"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_0r2y0r6">
+          <text></text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_0xkr1gg">
+          <text></text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0yuymzp">
+        <inputEntry id="UnaryTests_09bb7sl">
+          <text>"_3.6"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_05qzbl9">
+          <text>[1000000..5000000[</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_10juspq">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0ypo3oc">
+          <text>"GL"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_0cgs6rq">
+          <text></text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_10m37tt">
+          <text></text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_11cp4k4">
+        <inputEntry id="UnaryTests_1bpq1u0">
+          <text>"_3.6"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1f6qqsm">
+          <text>[300000..1000000[</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1pceuvw">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_14fcvje">
+          <text>"GB+F"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_13cryip">
+          <text></text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_0siv4d1">
+          <text></text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1uvsvfo">
+        <inputEntry id="UnaryTests_098p0mt">
+          <text>"_3.6"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0xdgpi3">
+          <text>[100000..300000[</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_157tjaf">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1evxo84">
+          <text>"DU"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_1oyspvt">
+          <text></text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_193ze7p">
+          <text></text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_058u5v4">
+        <inputEntry id="UnaryTests_12wx2xj">
+          <text>"_3.6"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_136zkn1">
+          <text>[20000..100000[</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_172fkg7">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0z405xx">
+          <text>"DU"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_0szqtr9">
+          <text>"K3"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_0hj5d3u">
+          <text></text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1nozj60">
+        <inputEntry id="UnaryTests_0qv1dbn">
+          <text>"_3.6"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_06ztaxu">
+          <text>[1..20000[</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1sdhfxc">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0umbm02">
+          <text>"DU"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_05wyc72">
+          <text>"K4"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_0pxo5wx">
+          <text></text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1qr4u00">
+        <inputEntry id="UnaryTests_0a9qzxy">
+          <text>"_3.7"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1idmwb1">
+          <text>&gt;= 5000000</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0vwkjoy">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_05j4nou">
+          <text>"VR"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_04kplgh">
+          <text></text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_1rnom7m">
+          <text></text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0e8m7or">
+        <inputEntry id="UnaryTests_0yxw0ml">
+          <text>"_3.7"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1pcausb">
+          <text>[100000..5000000[</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0mdhvo9">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0cn1nqr">
+          <text>"GL"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_1b8jq3v">
+          <text></text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_0nhfh55">
+          <text></text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_19wcmai">
+        <inputEntry id="UnaryTests_1m6vqyd">
+          <text>"_3.7"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0x6dok3">
+          <text>[1..100000[</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0jax4n1">
+          <text>true</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_00ylele">
+          <text>"GB+F"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_04mq02m">
+          <text></text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_06fqhdo">
+          <text></text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_192eevq">
+        <inputEntry id="UnaryTests_0j3y2dp">
+          <text>"_3.7"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0i7pokw">
+          <text>[1..100000[</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0fhukgd">
+          <text>false</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0aybvmm">
+          <text>"DU"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_016alax">
+          <text></text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_03bfwdm">
+          <text></text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0du5ka3">
+        <inputEntry id="UnaryTests_10jyjkz">
+          <text>"_3.8"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_13eww1e">
+          <text>&gt;= 5000000</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0hsueir">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0gdisb8">
+          <text>"VR"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_07d4l2f">
+          <text></text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_1qb1nt0">
+          <text></text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0huk1mj">
+        <inputEntry id="UnaryTests_1s9gx66">
+          <text>"_3.8"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0391hai">
+          <text>[1000000..5000000[</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0dung0j">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0w1nlr8">
+          <text>"GL"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_03mvbix">
+          <text></text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_1d6sxh5">
+          <text></text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_066cxgg">
+        <inputEntry id="UnaryTests_0kwz06l">
+          <text>"_3.8"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_13lfp88">
+          <text>[300000..1000000[</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_05ljzqx">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0t84pje">
+          <text>"GB"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_0inue28">
+          <text></text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_03malww">
+          <text></text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0xpiaoi">
+        <inputEntry id="UnaryTests_0wlqjvf">
+          <text>"_3.8"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0vn6f5t">
+          <text>[1..300000[</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_03y6a5o">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0j5e5zs">
+          <text>"DU"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_15m4clo">
+          <text>"PL"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_1j2in4q">
+          <text></text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0oflojs">
+        <inputEntry id="UnaryTests_0gd4e61">
+          <text>"_3.9"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1uv6jvx">
+          <text>&gt;=20000000</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0i7u37h">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0gzga9l">
+          <text>"VR"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_16petrj">
+          <text></text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_1tckj6i">
+          <text></text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1p4n3de">
+        <inputEntry id="UnaryTests_1nu8seq">
+          <text>"_3.9"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1jphfok">
+          <text>[2000000..20000000[</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_15xfyda">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_128jr00">
+          <text>"GL"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_1woy11u">
+          <text></text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_1fskrse">
+          <text></text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1156jem">
+        <description>zu Zweit mit FE(?)</description>
+        <inputEntry id="UnaryTests_1viqxoa">
+          <text>"_3.9"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0e8dt1x">
+          <text>[500000..2000000[</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1ivgwbg">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1yl5hol">
+          <text>"GB"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_1cf5g14">
+          <text>"DU"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_1532iko">
+          <text></text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0k43uxg">
+        <description>zu Zweit mit FE(?)</description>
+        <inputEntry id="UnaryTests_0ra5qui">
+          <text>"_3.9"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0fn6ec0">
+          <text>[200000..500000[</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0om5h1x">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0d1qkkd">
+          <text>"DU"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_1vkhb4l">
+          <text></text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_1tkfvah">
+          <text></text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1macl8l">
+        <description>zu Zweit mit FE(?)</description>
+        <inputEntry id="UnaryTests_03kx6k6">
+          <text>"_3.9"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1dogcag">
+          <text>[1..200000[</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0gawkga">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0r23gro">
+          <text>"DU"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_18jor5m">
+          <text>"K3"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_0uhoh0f">
+          <text></text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1pf6n5k">
+        <inputEntry id="UnaryTests_1dylllf">
+          <text>"_3.10"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0lw3lcq">
+          <text>&gt;= 5000000</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1w4ijs3">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_199yqk0">
+          <text>"GB+F"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_0zr4m4u">
+          <text>"GB"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_04yy2wf">
+          <text></text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1m1kyj4">
+        <inputEntry id="UnaryTests_1rkin3w">
+          <text>"_3.10"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_01sgg85">
+          <text>[300000..5000000[</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1geij5q">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0swd19w">
+          <text>"GB+F"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_10x5t4t">
+          <text>"GB"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_0294il1">
+          <text></text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0ccsdl1">
+        <inputEntry id="UnaryTests_0fwukyw">
+          <text>"_3.10"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1tvm701">
+          <text>[100000..300000[</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1gp8kkf">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0er14y7">
+          <text>"GB"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_0ua2zd6">
+          <text>"DU"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_01m1khh">
+          <text></text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1k4uko5">
+        <inputEntry id="UnaryTests_0so4q2t">
+          <text>"_3.10"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_08tqjkm">
+          <text>[20000..100000[</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0gjnnhw">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_09a00bi">
+          <text>"DU"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_1o4yvfo">
+          <text>"K3"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_18gw8i0">
+          <text></text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0krayax">
+        <inputEntry id="UnaryTests_1qyf9xf">
+          <text>"_3.10"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_15v8asn">
+          <text>[1..20000[</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1epywdc">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1trmw1v">
+          <text>"DU"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_004ijqb">
+          <text>"K4"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_0n08vwm">
+          <text>"PL"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1hodu4m">
+        <inputEntry id="UnaryTests_1qmo1u6">
+          <text>"_3.12"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1jp2zc8">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1vagd1x">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1ofiu2g">
+          <text>"GL"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_01jw1hg">
+          <text></text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_0jfon4s">
+          <text></text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_098p6na">
+        <inputEntry id="UnaryTests_0cqmfhb">
+          <text>"_3.13"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_00p5xi5">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0gk24gn">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1jb0qhh">
+          <text>"GL"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_1vfwdfy">
+          <text></text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_0cp0bj2">
+          <text></text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_128l02g">
+        <inputEntry id="UnaryTests_1r64z0b">
+          <text>"_3.14"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1yrkoc0">
+          <text>&gt;=20000000</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0d73c1p">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_00uo6rz">
+          <text>"VR"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_0yyok44">
+          <text></text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_10kn9ve">
+          <text></text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_10bick0">
+        <inputEntry id="UnaryTests_07w4iy7">
+          <text>"_3.14"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_12o1np3">
+          <text>[2000000..20000000[</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0xyl0zt">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0hjcwsy">
+          <text>"GL"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_066e5yw">
+          <text></text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_0r7jpfp">
+          <text></text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1m0sj6j">
+        <inputEntry id="UnaryTests_071x9ci">
+          <text>"_3.14"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_00bbix8">
+          <text>[500000..2000000[</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_13atxi1">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1sp6hce">
+          <text>"GB"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_1pe0zoo">
+          <text></text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_14w47bp">
+          <text></text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0cwch30">
+        <inputEntry id="UnaryTests_0g48qbh">
+          <text>"_3.14"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1umrdlx">
+          <text>[300000..500000[</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_05q6zab">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_189qkm3">
+          <text>"DU"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_1qg7r3i">
+          <text></text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_110xa0k">
+          <text></text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_14gr7mv">
+        <inputEntry id="UnaryTests_0l1me13">
+          <text>"_3.14"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_09jc8cs">
+          <text>[100000..300000[</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_07g0rvr">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_17x7p1n">
+          <text>"DU"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_06e1o7e">
+          <text>"K3"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_0t8467y">
+          <text></text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0vnuzfr">
+        <inputEntry id="UnaryTests_1wkakjb">
+          <text>"_3.14"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1yhe5xe">
+          <text>[1..100000[</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1wf3l93">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1r4o6rv">
+          <text>"DU"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_0z9etpg">
+          <text>"K4"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_1hn0qmv">
+          <text></text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_17wc2qq">
+        <inputEntry id="UnaryTests_0ggjx9u">
+          <text>"_3.15"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0qf5mbn">
+          <text>&gt;= 10000000</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0qqaccq">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0h8p1p9">
+          <text>"VR BLS Netz AG"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_0yss7y6">
+          <text></text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_0xh6hui">
+          <text></text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1qzfk59">
+        <inputEntry id="UnaryTests_0cqbnnw">
+          <text>"_3.15"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_07zzdn7">
+          <text>[2000000..10000000[</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0014tb4">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1xljpk5">
+          <text>"GL"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_1isc4hb">
+          <text></text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_08160oa">
+          <text></text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0ekwrzs">
+        <inputEntry id="UnaryTests_1352gnt">
+          <text>"_3.15"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0yn4m8z">
+          <text>[500000..2000000[</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_07lc6d2">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0ul77y4">
+          <text>"GB+F"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_09hluag">
+          <text></text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_1rp6h2x">
+          <text></text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1s4f40r">
+        <inputEntry id="UnaryTests_1t7oyb9">
+          <text>"_3.15"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1dq28w0">
+          <text>]100000..500000[</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_12a0v9u">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0z9l97r">
+          <text>"DU"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_0gz2yyb">
+          <text></text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_1iqrx0j">
+          <text></text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_05lheil">
+        <inputEntry id="UnaryTests_0zt4jtu">
+          <text>"_3.15"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0p9tw8i">
+          <text>]20000..100000]</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0a3cvfc">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_05rzlbo">
+          <text>"DU"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_0l88d9q">
+          <text>"K3"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_0xv9667">
+          <text></text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_004gyl3">
+        <inputEntry id="UnaryTests_0zhqxyk">
+          <text>"_3.15"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1mrfjca">
+          <text>[1..20000]</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0b2p0wu">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1h263vn">
+          <text>"DU"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_1npwc2w">
+          <text>"K4"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_0wccu42">
+          <text></text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1yrnpnw">
+        <inputEntry id="UnaryTests_1at1n0o">
+          <text>"_3.16"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_03qiuwm">
+          <text>&gt;=10000000</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0yvm79r">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1k9ndt7">
+          <text>"VR BLS Netz AG"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_0trae96">
+          <text></text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_14c1le7">
+          <text></text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0431v9o">
+        <inputEntry id="UnaryTests_1px4dtc">
+          <text>"_3.16"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0q74m73">
+          <text>[2000000..10000000[</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1wdiz5z">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_122p9xt">
+          <text>"GL"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_05ic784">
+          <text></text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_1du9op0">
+          <text></text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0mvbcyg">
+        <inputEntry id="UnaryTests_17tp5yw">
+          <text>"_3.16"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1a3jjql">
+          <text>[100000..2000000[</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1heoynb">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1an103p">
+          <text>"GB+F"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_16wzelz">
+          <text></text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_14g9efv">
+          <text></text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0npsor7">
+        <inputEntry id="UnaryTests_1tftnko">
+          <text>"_3.17"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1corlnw">
+          <text>&gt;=10000000</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1j0g2rh">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0bjpdi4">
+          <text>"GB+F"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_0hmtbd3">
+          <text>"GB"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_0egu4ax">
+          <text></text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_14kfnee">
+        <inputEntry id="UnaryTests_0enko14">
+          <text>"_3.17"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0g4z9mt">
+          <text>[2000000..10000000[</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1arv5ht">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0r6pvvc">
+          <text>"GB"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_1f76r3w">
+          <text>"DU"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_0m6e7j0">
+          <text></text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1r69kby">
+        <inputEntry id="UnaryTests_07me7x7">
+          <text>"_3.17"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0vyvh0v">
+          <text>]100000..2000000[</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0rvu1c2">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1n2pmgf">
+          <text>"DU"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_0lsbf2p">
+          <text></text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_0h81q97">
+          <text></text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1vabmip">
+        <inputEntry id="UnaryTests_12c5ch2">
+          <text>"_3.17"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0gwc6fk">
+          <text>]20000..100000]</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1xnkhlg">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_037rtxr">
+          <text>"DU"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_13c2d04">
+          <text>"K3"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_0yqcvc4">
+          <text></text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1ujzgn8">
+        <inputEntry id="UnaryTests_0t7vnim">
+          <text>"_3.17"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0z3hrqo">
+          <text>[1..20000]</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1u2poym">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0qeei4b">
+          <text>"DU"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_197ojm6">
+          <text>"K4"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_1yoyl0d">
+          <text>"PL"</text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+</definitions>

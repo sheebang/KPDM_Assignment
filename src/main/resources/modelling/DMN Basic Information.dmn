@@ -1,0 +1,939 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/DMN/20151101/dmn.xsd" xmlns:biodi="http://bpmn.io/schema/dmn/biodi/1.0" xmlns:camunda="http://camunda.org/schema/1.0/dmn" id="definitions_0ucz29f" name="definitions" namespace="http://camunda.org/schema/1.0/dmn">
+  <decision id="decision" name="Skillset matching">
+    <extensionElements>
+      <biodi:bounds x="200" y="200" width="180" height="80" />
+    </extensionElements>
+    <decisionTable id="decisionTable" hitPolicy="FIRST">
+      <input id="input1" label="Age" camunda:inputVariable="">
+        <inputExpression id="inputExpression1" typeRef="integer">
+          <text>userAge</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_17gty8a" label="Work permit" camunda:inputVariable="">
+        <inputExpression id="LiteralExpression_1b9zoui" typeRef="boolean">
+          <text>userWorkPermit</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_0yduu10" label="Education Degree" camunda:inputVariable="">
+        <inputExpression id="LiteralExpression_14l1z3n" typeRef="string">
+          <text>userEducationDegree</text>
+        </inputExpression>
+        <inputValues id="UnaryTests_1m301ks">
+          <text>"Bachelor","Master","Doctor","Higher Education"</text>
+        </inputValues>
+      </input>
+      <input id="InputClause_0vh4r2g" label="Working Experience" camunda:inputVariable="">
+        <inputExpression id="LiteralExpression_0strlhs" typeRef="integer">
+          <text>userExperience</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_02vpp7x" label="Field of work experience" camunda:inputVariable="">
+        <inputExpression id="LiteralExpression_0a60c7b" typeRef="string">
+          <text>userFieldOfWorkExperience</text>
+        </inputExpression>
+        <inputValues id="UnaryTests_0u295g4">
+          <text>"analytics","architecture","development","security"</text>
+        </inputValues>
+      </input>
+      <input id="InputClause_0qfgzc2" label="Work load">
+        <inputExpression id="LiteralExpression_155zp2y" typeRef="string">
+          <text>preferenceWorkload</text>
+        </inputExpression>
+        <inputValues id="UnaryTests_0i13rrr">
+          <text>"Parttime","Fulltime"</text>
+        </inputValues>
+      </input>
+      <input id="InputClause_0el4q03" label="Traveling prefernce">
+        <inputExpression id="LiteralExpression_1a4wusq" typeRef="string">
+          <text>preferenceTraveling</text>
+        </inputExpression>
+      </input>
+      <output id="output1" label="Accept Candidate" name="" typeRef="string" />
+      <rule id="row-382234196-3">
+        <inputEntry id="UnaryTests_1a412jr">
+          <text>&lt; 50</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_01chg3n">
+          <text>true</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1l7snsj">
+          <text>"Bachelor","Higher Education"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1sgvhgg">
+          <text>&lt;5</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0us1su3">
+          <text>"analytics"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1udsjqy">
+          <text>"Parttime"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0wo40if">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_01b367q">
+          <text>"Junior analytics officer(parttime)"</text>
+        </outputEntry>
+      </rule>
+      <rule id="row-382234196-2">
+        <inputEntry id="UnaryTests_1timg12">
+          <text>&lt; 50</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1leh9ht">
+          <text>true</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1xwo0fk">
+          <text>"Master","Doctor"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_13cwmnz">
+          <text>&gt;5</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0eckz62">
+          <text>"analytics"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_17cxahh">
+          <text>"Parttime"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_15m66k8">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_15rhsw6">
+          <text>"Senior analytics officer(partime)"</text>
+        </outputEntry>
+      </rule>
+      <rule id="row-382234196-6">
+        <inputEntry id="UnaryTests_0e3l3na">
+          <text>&lt; 50</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1q206cz">
+          <text>true</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1i6sakf">
+          <text>"Bachelor", "HigherEducation"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_08nqmex">
+          <text>&gt;5</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0hjtyhy">
+          <text>"analytics"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1ailmb6">
+          <text>"Parttime"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1ocuzyn">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0zldq07">
+          <text>"Analytics officer(partime)"</text>
+        </outputEntry>
+      </rule>
+      <rule id="row-382234196-5">
+        <inputEntry id="UnaryTests_08rw9bb">
+          <text>&lt; 50</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0eb3vdu">
+          <text>true</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1ay2pgq">
+          <text>"Master", "Doctor"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_09eop7t">
+          <text>&lt;5</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1p9zh59">
+          <text>"analytics"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_13ysw79">
+          <text>"Parttime"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0gpczfz">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0mtldeh">
+          <text>"Analytics officer(partime)"</text>
+        </outputEntry>
+      </rule>
+      <rule id="row-382234196-1">
+        <inputEntry id="UnaryTests_1nlgh8x">
+          <text>&lt; 50</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1yq1upn">
+          <text>true</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1a3s9p6">
+          <text>"Bachelor","Higher Education"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0a7x6fi">
+          <text>&lt;5</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_02ksg21">
+          <text>"analytics"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_07b16a2">
+          <text>"Fulltime"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_011qfdv">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0i8zt30">
+          <text>"Junior analytics officer(100%)"</text>
+        </outputEntry>
+      </rule>
+      <rule id="row-382234196-4">
+        <inputEntry id="UnaryTests_11t6cwu">
+          <text>&lt; 50</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0h5898i">
+          <text>true</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1thz382">
+          <text>"Master","Doctor"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1465gv2">
+          <text>&gt;5</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_18g031y">
+          <text>"analytics"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_15tohxh">
+          <text>"Fulltime"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0pubg87">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1jm8c0q">
+          <text>"Senior analytics officer(100%)"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0j3xnh2">
+        <inputEntry id="UnaryTests_0wj1fq6">
+          <text>&lt; 50</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1ho2ael">
+          <text>true</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_11p1irw">
+          <text>"Bachelor", "HigherEducation"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1s9xn9c">
+          <text>&gt;5</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0ywimei">
+          <text>"analytics"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0e25yxk">
+          <text>"Fulltime"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_07cem4m">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0i60fhy">
+          <text>"Analytics officer(100%)"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_19ctzu6">
+        <inputEntry id="UnaryTests_0496sdi">
+          <text>&lt; 50</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0vxb409">
+          <text>true</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1vh2ivo">
+          <text>"Master", "Doctor"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1fd344q">
+          <text>&lt;5</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1e4oa13">
+          <text>"analytics"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0zi043l">
+          <text>"Fulltime"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0sl341e">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1al69ia">
+          <text>"Analytics officer(100%)"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1b5d8f2">
+        <inputEntry id="UnaryTests_1doz1gk">
+          <text>&lt; 50</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0apkuc9">
+          <text>true</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1rnh297">
+          <text>"Bachelor","Higher Education"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_100igma">
+          <text>&lt;5</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1rpn65x">
+          <text>"architecture"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1qkvtjd">
+          <text>"Parttime"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1675jbr">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1l27kb1">
+          <text>"Junior architect(parttime)"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_18ka6at">
+        <inputEntry id="UnaryTests_0p5tm7p">
+          <text>&lt; 50</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1091k1p">
+          <text>true</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1jlypjr">
+          <text>"Master","Doctor"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0rulmx7">
+          <text>&gt;5</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0ojjajq">
+          <text>"architecture"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1fn7c4c">
+          <text>"Parttime"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1dd7u5p">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1dglb98">
+          <text>"Senior architect(partime)"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1o3090t">
+        <inputEntry id="UnaryTests_1u6cowp">
+          <text>&lt; 50</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0k767b1">
+          <text>true</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_084hckz">
+          <text>"Bachelor", "HigherEducation"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_02gz98w">
+          <text>&gt;5</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1mt8zp3">
+          <text>"architecture"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0f7mckw">
+          <text>"Parttime"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1rxv17l">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1orpjr4">
+          <text>"Architect(parttime)"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_06gi3dn">
+        <inputEntry id="UnaryTests_1kaehhk">
+          <text>&lt; 50</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1hs7efi">
+          <text>true</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0pxjkmy">
+          <text>"Master", "Doctor"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0aja129">
+          <text>&lt;5</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_02kexnh">
+          <text>"architecture"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_13xqwt1">
+          <text>"Parttime"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1a4eq3v">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1th10uy">
+          <text>"Architect(parttime)"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1a46cnm">
+        <inputEntry id="UnaryTests_12jspbe">
+          <text>&lt; 50</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1nsdve9">
+          <text>true</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_02sv4ey">
+          <text>"Bachelor", "HigherEducation"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_107u466">
+          <text>&lt;5</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0khj8q7">
+          <text>"architecture"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_049mvn0">
+          <text>"Fulltime"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1v47qj9">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0ir9d0q">
+          <text>"Junior architect(100%)"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1ceja5c">
+        <inputEntry id="UnaryTests_0kihq19">
+          <text>&lt; 50</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0wl53rn">
+          <text>true</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_00l578w">
+          <text>"Master","Doctor"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_15m9emu">
+          <text>&gt;5</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_12flxiv">
+          <text>"architecture"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_04lzzjt">
+          <text>"Fulltime"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_14x0usp">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1g6t4li">
+          <text>"Senior architect(100%)"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0pwkk7p">
+        <inputEntry id="UnaryTests_0m6w02h">
+          <text>&lt; 50</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_126y6in">
+          <text>true</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0ux5dv7">
+          <text>"Bachelor", "HigherEducation"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0h1pz3w">
+          <text>&gt;5</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0dvsn11">
+          <text>"architecture"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1ga55tf">
+          <text>"Fulltime"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0mdtl3j">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0iwf5t4">
+          <text>"Architect(100%)"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_050xug8">
+        <inputEntry id="UnaryTests_0v7c660">
+          <text>&lt; 50</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0148ccl">
+          <text>true</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0mg49gq">
+          <text>"Master", "Doctor"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0r7q96f">
+          <text>&lt;5</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_03thw4s">
+          <text>"architecture"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_04qaipr">
+          <text>"Fulltime"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1vgds46">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1j7dof4">
+          <text>"Architect(100%)"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0cj35n8">
+        <inputEntry id="UnaryTests_1yitkcm">
+          <text>&lt; 50</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_17cmuhf">
+          <text>true</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0yjms2y">
+          <text>"Bachelor","Higher Education"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_112zbg1">
+          <text>&lt;5</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_13qp5me">
+          <text>"security"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_08yy3rh">
+          <text>"Parttime"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_122kik2">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_039m2t6">
+          <text>"Junior security officer(parttime)"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1omuq57">
+        <inputEntry id="UnaryTests_1hkbjpw">
+          <text>&lt; 50</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0ngx0of">
+          <text>true</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_08bhtvn">
+          <text>"Master","Doctor"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1gb93u2">
+          <text>&gt;5</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0e1ghc2">
+          <text>"security"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0b70cws">
+          <text>"Parttime"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0cw45av">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1sfgim9">
+          <text>"Senior security officer(parttime)"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_19qsvzt">
+        <inputEntry id="UnaryTests_1gvspno">
+          <text>&lt; 50</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0hz7y7f">
+          <text>true</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1qepsbc">
+          <text>"Bachelor","Higher Education"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_195w0in">
+          <text>&gt;5</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1twjlz6">
+          <text>"security"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1kid7px">
+          <text>"Parttime"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1uatqt5">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0wdunnw">
+          <text>"Security officer(parttime)"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_00wiarp">
+        <inputEntry id="UnaryTests_196jrkq">
+          <text>&lt; 50</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_05njist">
+          <text>true</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1ph7tj5">
+          <text>"Master","Doctor"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0v9137d">
+          <text>&lt;5</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_18l4pe2">
+          <text>"security"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0l6j4fr">
+          <text>"Parttime"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_07dq72t">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0f9jg5p">
+          <text>"Security officer(parttime)"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_148dvwk">
+        <inputEntry id="UnaryTests_01ojvyc">
+          <text>&lt; 50</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1xiulzy">
+          <text>true</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0b0xqzd">
+          <text>"Bachelor","Higher Education"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_184z41z">
+          <text>&lt;5</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0ouq8jo">
+          <text>"security"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_14kp2vr">
+          <text>"Fulltime"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0hw6jzq">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0sc1a35">
+          <text>"Junior security officer(100%)"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1t989h3">
+        <inputEntry id="UnaryTests_1pderjz">
+          <text>&lt; 50</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0q1o2v5">
+          <text>true</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_066f6cc">
+          <text>"Master","Doctor"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_006uhts">
+          <text>&gt;5</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1lrdsbs">
+          <text>"security"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1teqcdw">
+          <text>"Fulltime"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0hp0u3s">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_181ska9">
+          <text>"Senior security officer(100%)"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1ed26n7">
+        <inputEntry id="UnaryTests_083kvjt">
+          <text>&lt; 50</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0ibp5fy">
+          <text>true</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0b43h3o">
+          <text>"Bachelor", "HigherEducation"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_15na5s0">
+          <text>&gt;5</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0javdew">
+          <text>"security"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0cqilk8">
+          <text>"Fulltime"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0drakki">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_072ay7p">
+          <text>"Security officer(100%)"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1suqpbe">
+        <inputEntry id="UnaryTests_0402ube">
+          <text>&lt; 50</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1jhm3bu">
+          <text>true</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1p8ytze">
+          <text>"Master","Doctor"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0gub1of">
+          <text>&lt;5</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1nava6s">
+          <text>"security"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0a6xrpn">
+          <text>"Fulltime"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_035cts7">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0a91egw">
+          <text>"Security officer(100%)"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1hx11ke">
+        <inputEntry id="UnaryTests_1nkkv1t">
+          <text>&lt; 50</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1xt2h06">
+          <text>true</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1d7mxxp">
+          <text>"Bachelor","Higher Education"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1ne73pz">
+          <text>&lt;5</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_07bo9w7">
+          <text>"development"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1jc83ds">
+          <text>"Parttime"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0zndny0">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0wrdwvh">
+          <text>"Junior Developer(parttime)"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1q2lzpo">
+        <inputEntry id="UnaryTests_08u2kb5">
+          <text>&lt; 50</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1lp2mc8">
+          <text>true</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0apyrtw">
+          <text>"Master","Doctor"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0ht1vts">
+          <text>&gt;5</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1mby4k3">
+          <text>"development"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0d2g70i">
+          <text>"Parttime"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_18up3et">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_12m6eyv">
+          <text>"Senior Developer(parttime)"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1tgnh70">
+        <inputEntry id="UnaryTests_0wbqc79">
+          <text>&lt; 50</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0qaul02">
+          <text>true</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0jkua5n">
+          <text>"Bachelor","Higher Education"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0m2m0by">
+          <text>&gt;5</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1kqqk1q">
+          <text>"development"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_06podun">
+          <text>"Parttime"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1o9ephz">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0sewjtr">
+          <text>"Developer(parttime)"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1jddr6r">
+        <inputEntry id="UnaryTests_08iyicz">
+          <text>&lt; 50</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_12qug9r">
+          <text>true</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0pkb58x">
+          <text>"Master","Doctor"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0t2fueh">
+          <text>&lt;5</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0nm83jt">
+          <text>"development"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0xvthh7">
+          <text>"Parttime"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1p41oe8">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1riqg7j">
+          <text>"Developer(parttime)"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_05adet7">
+        <inputEntry id="UnaryTests_09wquc9">
+          <text>&lt; 50</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0e250u5">
+          <text>true</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_06r6uun">
+          <text>"Bachelor","Higher Education"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0gc3eie">
+          <text>&lt;5</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1ftynqe">
+          <text>"development"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_159r81c">
+          <text>"Fulltime"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_029cwnt">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0p3jrvg">
+          <text>"Junior Developer(100%)"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0h0di4h">
+        <inputEntry id="UnaryTests_03hyxk6">
+          <text>&lt; 50</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_10y1kf7">
+          <text>true</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_122kr84">
+          <text>"Master","Doctor"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_16agkm2">
+          <text>&gt;5</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_06dgw33">
+          <text>"development"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0mnzwmf">
+          <text>"Fulltime"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1olrb32">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0yuazd5">
+          <text>"Senior Developer(100%)"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1tr6tyc">
+        <inputEntry id="UnaryTests_07fx2v1">
+          <text>&lt; 50</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_034zxa2">
+          <text>true</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0e6ticj">
+          <text>"Bachelor","Higher Education"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1m3bayw">
+          <text>&gt;5</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1uuo4ae">
+          <text>"development"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0hiqldk">
+          <text>"Fulltime"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1gn9xlz">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0h1fes9">
+          <text>"Developer(100%)"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_13tm1t5">
+        <inputEntry id="UnaryTests_0f9ljts">
+          <text>&lt; 50</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_13smyst">
+          <text>true</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0kr7dct">
+          <text>"Master","Doctor"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0ig0dvs">
+          <text>&lt;5</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0mwtt09">
+          <text>"development"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1v0o485">
+          <text>"Fulltime"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1edyuce">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_015pxer">
+          <text>"Developer(100%)"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0j87o1z">
+        <inputEntry id="UnaryTests_1yimb79">
+          <text>&gt;= 50</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_09ajbzj">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1oi9qs8">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1ealxdq">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_19voz8h">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0rwflax">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1slxgu2">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0sxptpl">
+          <text>"false"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_17h9gkf">
+        <inputEntry id="UnaryTests_08tamyy">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0g95hrr">
+          <text>false</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0p7qpd7">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0hwbanp">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1i1uy6k">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0ecgrm9">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0trm36v">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0g4kd8u">
+          <text>"false"</text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+</definitions>

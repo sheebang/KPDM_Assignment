@@ -1,0 +1,964 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/DMN/20151101/dmn.xsd" xmlns:camunda="http://camunda.org/schema/1.0/dmn" xmlns:biodi="http://bpmn.io/schema/dmn/biodi/1.0" id="Definitions_1r2de1k" name="DRD" namespace="http://camunda.org/schema/1.0/dmn">
+  <decision id="mapping" name="Decision 1">
+    <extensionElements>
+      <biodi:bounds x="150" y="150" width="180" height="80" />
+    </extensionElements>
+    <decisionTable id="decisionTable_1">
+      <input id="input_1" label="Function" camunda:inputVariable="collElement">
+        <inputExpression id="inputExpression_1" typeRef="string">
+          <text>collElement.value()</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_0yw8nj8" label="Business Unit" camunda:inputVariable="FormField_3s57qlk">
+        <inputExpression id="LiteralExpression_0p7ar0i" typeRef="string">
+          <text></text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_10x5bya" label="Department" camunda:inputVariable="FormField_20m5ug3">
+        <inputExpression id="LiteralExpression_1p772lf" typeRef="string">
+          <text></text>
+        </inputExpression>
+      </input>
+      <output id="output_1" label="Eligible Signers" name="mappingResult" typeRef="string" />
+      <rule id="DecisionRule_0v2n0uw">
+        <inputEntry id="UnaryTests_0y07mqm">
+          <text>"VR"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1il7992">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1nmfvzq">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1ihfepx">
+          <text>"Rudolf Stämpfli", "Renate Amstutz Bettschart", "Viola Amherd", "Bernhard Antener", "Lorenz Bösch", "Viviana Buchmann-Tosi", "Martin Bütikofer", "Ueli Dietiker", "Josef Küttel"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_037fitk">
+        <inputEntry id="UnaryTests_08kcrvm">
+          <text>"VR BLS Netz AG"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0ofjs2w">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_19m9lmr">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0hs84qv">
+          <text>"Jean-Michel Cina", "Barbara Egger-Jenzer", "Philippe Gauderon", "Josef Küttel", "Karl Martin Schwaar", "Bernard Guillelmon", "Peter Kruch", "Jürg Viktor Zimmermann", "Matthias Johannes Kurmann", "Daniel Wyder", "Franziska Jermann", "Philippe Racine", "Bruno Wyssmüller", "Lorenz Josef Bösch", "Sabine Beatrice Steiger", "Klaus Helmut Juch", "Martin Bütikofer", "Ulrich Dietiker", "Thomas Friedli", "Markus Alfred Meier", "Viviana Maria Buchmann-Tosi", "Isabelle Käppeli", "Thomas Andreas Müller", "Dr. Rudolf Stämpfli", "Daniel Leuenberger", "Renate Amstutz Bettschart", "Luca Baroni"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1my6j14">
+        <inputEntry id="UnaryTests_1hh6r5a">
+          <text>"GL"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1aiwz69">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0q6zpkw">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1es49s1">
+          <text>"Bernard Guillelmon", "Luca Baroni", "Franziska Jerman", "Daniel Wyder", "Daniel Hofer", "Peter Fankhauser", "Daniel Leuenberger", "Dr. Dirk Stahl"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1ln5sry">
+        <inputEntry id="UnaryTests_0d9oe4m">
+          <text>"PL"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1ryotgh">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1ugqvpl">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_05a6q37">
+          <text>"Projektleiter"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_07swaa2">
+        <inputEntry id="UnaryTests_11dt738">
+          <text>"GB"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_14653ui">
+          <text>"CEO"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0idaijt">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_056x437">
+          <text>"Dr. Dirk Stahl"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1a3lx1v">
+        <inputEntry id="UnaryTests_0e1zb43">
+          <text>"GB+F"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1qnmge7">
+          <text>"CEO"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0jczyam">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1ccf1cw">
+          <text>"Dr. Dirk Stahl", "Marco Guntern"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1losjum">
+        <inputEntry id="UnaryTests_0r0r35r">
+          <text>"DU"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_14is9d2">
+          <text>"CEO"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1st02p3">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0f1kbh1">
+          <text>"Stefanie Burri, Marco Guntern, Markus Zgraggen, Dr. Dirk Pfister"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0wobqpz">
+        <inputEntry id="UnaryTests_1dg3fdn">
+          <text>"K3"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_028t6ma">
+          <text>"CEO"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_043oqcj">
+          <text>"Leitungsstab"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0053gd3">
+          <text>"Stefanie Burri"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_00c5cfj">
+        <inputEntry id="UnaryTests_0hkf2hq">
+          <text>"K3"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1hhdtdh">
+          <text>"CEO"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1j97ckz">
+          <text>"Finanzen"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0h0kknu">
+          <text>"Marco Guntern"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1kq9lop">
+        <inputEntry id="UnaryTests_11abiu2">
+          <text>"K3"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0jiykzu">
+          <text>"CEO"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_13z76in">
+          <text>"ProduktionEinkauf"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_09j6848">
+          <text>"Markus Zgraggen"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1b54zsh">
+        <inputEntry id="UnaryTests_0nwv6pg">
+          <text>"K3"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0m8iuzp">
+          <text>"CEO"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1axcnla">
+          <text>"ProduktmngtVertrieb"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1fnm1mv">
+          <text>"Dr. Dirk Pfister"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1aj6kfz">
+        <inputEntry id="UnaryTests_0y7qqj9">
+          <text>"K4"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1gwtudb">
+          <text>"CEO"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0jw6emp">
+          <text>"Finanzen"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_16dt3z5">
+          <text>"Monika Lauper", "Sybille Castelberg"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_02zspnx">
+        <inputEntry id="UnaryTests_1e9tlvq">
+          <text>"K4"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0q1aq8m">
+          <text>"CEO"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0j3gysz">
+          <text>"ProduktionEinkauf"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1cw9zaq">
+          <text>"M. Schellhammer", "Stephan Moll", "Samuel Etter", "M. Böhm", "Roland Rieder", "Geanina Boll"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1eagct3">
+        <inputEntry id="UnaryTests_152i2zc">
+          <text>"K4"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1m3okhh">
+          <text>"CEO"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1325hw7">
+          <text>"ProduktmngtVertrieb"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_070p123">
+          <text>"Christian Stäubli", "Silvan Munz"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1bj32z8">
+        <inputEntry id="UnaryTests_1j6bmuv">
+          <text>"GB"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1xwv7sd">
+          <text>"Informatik"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0e4c57i">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_02wdyfr">
+          <text>"Daniel Leuenberger"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0590mxk">
+        <inputEntry id="UnaryTests_18orl5g">
+          <text>"GB+F"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0thncoi">
+          <text>"Informatik"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0hm6dmb">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_17yyiki">
+          <text>"Daniel Leuenberger", "Marco Guntern"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0w3wkv8">
+        <inputEntry id="UnaryTests_179y61d">
+          <text>"DU"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0s4ao56">
+          <text>"Informatik"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_000l0oh">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0l6zi9k">
+          <text>"Marc Zesiger", "David Spale", "Roger Bühlmann"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_12v524t">
+        <inputEntry id="UnaryTests_01v7gg4">
+          <text>"K3"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0uz9dmq">
+          <text>"Informatik"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0edtk9p">
+          <text>"ApplikatMngt"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1lmstr9">
+          <text>"Marc Zesiger"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1inuyak">
+        <inputEntry id="UnaryTests_1lqkcxi">
+          <text>"K3"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0qw5qqm">
+          <text>"Informatik"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_08n3q7k">
+          <text>"PlanungUndSteuerung"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_11etqjd">
+          <text>"David Spale"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1gajwhi">
+        <inputEntry id="UnaryTests_0kxnlda">
+          <text>"K3"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1cci43a">
+          <text>"Informatik"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1e3h3r8">
+          <text>"Betrieb"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_009ydu2">
+          <text>"Roger Bühlmann"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0iy1jxd">
+        <inputEntry id="UnaryTests_1ibyatj">
+          <text>"K4"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_17tr2tq">
+          <text>"Informatik"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1ucnre6">
+          <text>"ApplikatMngt"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1wj9xsf">
+          <text>"Maro Weltli", "Stefan Blaser", "Thomas Frei", "Manuel Kohler", "Rolf Tiermann"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0lg65u6">
+        <inputEntry id="UnaryTests_0a88zmn">
+          <text>"K4"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_10fljw8">
+          <text>"Informatik"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_03eax08">
+          <text>"PlanungUndSteuerung"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_17gd7z5">
+          <text>"Florian Baumann", "Peter Lange", "Anthony Smith", "Thomas Wuillemin"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0t83ak5">
+        <inputEntry id="UnaryTests_1uoakhe">
+          <text>"K4"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1r2bhit">
+          <text>"Informatik"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0gimabf">
+          <text>"Betrieb"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1ljwry2">
+          <text>"Markus Mischler", "Thomas Edibauer", "Ruedi Oswald", "Roger Bühlmann"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0y8oydu">
+        <inputEntry id="UnaryTests_0nqarrj">
+          <text>"GB"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1g16mwo">
+          <text>"Bahnproduktion"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1qb577g">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0xu8fly">
+          <text>"Peter Fankhauser"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_08xnl3w">
+        <inputEntry id="UnaryTests_15om4ui">
+          <text>"GB+F"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0rwrp9a">
+          <text>"Bahnproduktion"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0tawmzc">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_03645ei">
+          <text>"Peter Fankhauser", "Marco Guntern"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1fto1vi">
+        <inputEntry id="UnaryTests_1eu6k7w">
+          <text>"DU"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1spf54g">
+          <text>"Bahnproduktion"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1uex59z">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0l4mrdy">
+          <text>"Thomas Stupp", "Martin Leu", "Armin Lederer", "Thomas Krieg"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1aijljb">
+        <inputEntry id="UnaryTests_180y2g3">
+          <text>"K3"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1oyno1q">
+          <text>"Bahnproduktion"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1hif1oj">
+          <text>"ProgrammProficio"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0gfcalt">
+          <text>"Antje Niendorf"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0bwjqh5">
+        <inputEntry id="UnaryTests_0dph5lu">
+          <text>"K3"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0dzv88h">
+          <text>"Bahnproduktion"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_03vz7n8">
+          <text>"EntwicklUndProjekte"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0ue0scf">
+          <text>"Andreas Biedermann"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0gy2lly">
+        <inputEntry id="UnaryTests_0fteupn">
+          <text>"K3"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_058mxev">
+          <text>"Bahnproduktion"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0ht0bee">
+          <text>"KapazitaetsplUndFlottenmg"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0ivham1">
+          <text>"Thomas Stupp"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0ffzabl">
+        <inputEntry id="UnaryTests_1thmjk1">
+          <text>"K3"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_16w1j7u">
+          <text>"Bahnproduktion"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1le93ta">
+          <text>"ZugUndLokpers"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_04gaome">
+          <text>"Martin Leu"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0645dx7">
+        <inputEntry id="UnaryTests_1q0iyb9">
+          <text>"K3"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1rirdvs">
+          <text>"Bahnproduktion"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0trmbez">
+          <text>"DreiR-Geschaefte"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1owtwlx">
+          <text>"Armin Lederer"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1nzvbdm">
+        <inputEntry id="UnaryTests_0f5k4ky">
+          <text>"K3"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_15r1i1f">
+          <text>"Bahnproduktion"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0kdu9pw">
+          <text>"LenkungUndbnIH"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0huvimj">
+          <text>"Thomas Krieg"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1t4zvw2">
+        <inputEntry id="UnaryTests_1b3behr">
+          <text>"K4"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1s8lh6i">
+          <text>"Bahnproduktion"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1ri63qd">
+          <text>"KapazitaetsplUndFlottenmg"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1ngeaz3">
+          <text>"Benedikt Gerth", "Michael Kilchemann", "Reto Wagner", "Marcus Lindemann", "Matthias Kunz"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0mobvnt">
+        <inputEntry id="UnaryTests_1blf8sj">
+          <text>"K4"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1a79onp">
+          <text>"Bahnproduktion"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1u2knfa">
+          <text>"ZugUndLokpers"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1ahpfsk">
+          <text>"Roger Blend", "Ulrich Kohler", "Bruno Jaun", "Christian Hohnbaum", "Armin Meusburger"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_02ve7vh">
+        <inputEntry id="UnaryTests_1voe5qa">
+          <text>"K4"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1fhm88p">
+          <text>"Bahnproduktion"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1mw4k7l">
+          <text>"DreiR-Geschaefte"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_115ylcu">
+          <text>"Etienne Hueber", "Beat Freiburghaus", "Wilhelm Rieder", "Rene Michel"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0kgioea">
+        <inputEntry id="UnaryTests_1x4ritb">
+          <text>"K4"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0okpjgo">
+          <text>"Bahnproduktion"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1jhh5ls">
+          <text>"LenkungUndbnIH"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1ofqiue">
+          <text>"Marc Lädrach", "Peter Tschanz", "Mike Scheider", "Marcel Dietrich", "Kaspar A. Streiff"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0r7xbld">
+        <inputEntry id="UnaryTests_0ot7yyf">
+          <text>"GB"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1dxq4xj">
+          <text>"Personenverkehr"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_18hxiih">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0om8z8b">
+          <text>"Daniel Hofer"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0id6pkk">
+        <inputEntry id="UnaryTests_1opqskl">
+          <text>"GB+F"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1q9wivz">
+          <text>"Personenverkehr"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1eaojqs">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1vt4ga5">
+          <text>"Daniel Hofer", "Marco Guntern"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_085nst5">
+        <inputEntry id="UnaryTests_0z4wlwp">
+          <text>"DU"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1lchrqg">
+          <text>"Personenverkehr"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0h5doti">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0j1swg6">
+          <text>"Markus Dössegger", "Daniel Hofer", "Martin Reichenbach", "Sandro Borrelli", "Claude Merlach", "Edgar Schenk", "Urs Hochuli"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1f5bekz">
+        <inputEntry id="UnaryTests_09lh10n">
+          <text>"K3"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0pnaurx">
+          <text>"Personenverkehr"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0z6vt7m">
+          <text>"MobilitaetMarkterwFV"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_08ztp51">
+          <text>"Markus Dössegger"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0r9oj41">
+        <inputEntry id="UnaryTests_05unscz">
+          <text>"K3"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1sm50rm">
+          <text>"Personenverkehr"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_10tkgyl">
+          <text>"Vertrieb"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_10oppo3">
+          <text>"Daniel Hofer"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1l66l84">
+        <inputEntry id="UnaryTests_1mydlpm">
+          <text>"K3"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1hi5szh">
+          <text>"Personenverkehr"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_06tm0v5">
+          <text>"ProjekteUndQualitaet"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_01x1jzb">
+          <text>"Martin Reichenbach"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_06rmxtt">
+        <inputEntry id="UnaryTests_1c8gmhm">
+          <text>"K3"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_14wyxje">
+          <text>"Personenverkehr"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1v8imlw">
+          <text>"Marketing"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1fl0kt0">
+          <text>"Sandro Borrelli"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1ueinq9">
+        <inputEntry id="UnaryTests_1rpzvut">
+          <text>"K3"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1aoadlc">
+          <text>"Personenverkehr"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1rz3c9d">
+          <text>"Schiff"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0rt7uxp">
+          <text>"Claude Merlach"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1opxegk">
+        <inputEntry id="UnaryTests_116qogw">
+          <text>"K3"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0adn1qe">
+          <text>"Personenverkehr"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1jbzvul">
+          <text>"Bahn"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_058pnso">
+          <text>"Edgar Schenk"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_07x44nj">
+        <inputEntry id="UnaryTests_19oc2au">
+          <text>"K3"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0lmc3w0">
+          <text>"Personenverkehr"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0416gwq">
+          <text>"Autoverlad"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0y22exj">
+          <text>"Urs Hochuli"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1jg24b9">
+        <inputEntry id="UnaryTests_0ja769q">
+          <text>"K4"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_141wid2">
+          <text>"Personenverkehr"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1phn4ow">
+          <text>"Vertrieb"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0tjuxjm">
+          <text>"Beat Theiler", "Andre von Arx", "Pierre-Alain Michel"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1m02su1">
+        <inputEntry id="UnaryTests_1w1uhw4">
+          <text>"K4"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0tgq957">
+          <text>"Personenverkehr"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0ydpft3">
+          <text>"ProjekteUndQualitaet"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0tyh6ju">
+          <text>"Tanja Siegenthaler"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0iedl4s">
+        <inputEntry id="UnaryTests_1j65gxp">
+          <text>"K4"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_04hho7z">
+          <text>"Personenverkehr"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0kjx3ss">
+          <text>"Marketing"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0a9f6cc">
+          <text>"Michael Nussbaumer", "Christian Schneider", "Matin Gäggeler", "Dominique Berger"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0ej8lsg">
+        <inputEntry id="UnaryTests_0fvbe3s">
+          <text>"K4"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_12z9vpt">
+          <text>"Personenverkehr"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_16dh33d">
+          <text>"Schiff"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_05s1u5d">
+          <text>"Kaspar Stettler", "Rene Anliker", "Ralph Darmstädter"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_125b8oj">
+        <inputEntry id="UnaryTests_0n88u6o">
+          <text>"K4"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_13xemx8">
+          <text>"Personenverkehr"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0xb7sx9">
+          <text>"Bahn"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0blxxyz">
+          <text>"H.-B. Fiechter", "Florian Kappler", "Stephanie Thalmann"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0ldhtee">
+        <inputEntry id="UnaryTests_0crgaaj">
+          <text>"K4"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0rqtghc">
+          <text>"Personenverkehr"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_07laz6l">
+          <text>"Autoverlad"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1486vyw">
+          <text>"Daniel Waldvogel", "Andrea Luginbühl", "Urs Hochuli"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0bujqld">
+        <inputEntry id="UnaryTests_1p32sgy">
+          <text>"GB"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1pdkai3">
+          <text>"Infrastruktur"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0ed7v35">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1johbj5">
+          <text>"Daniel Wyder"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0yrbfx8">
+        <inputEntry id="UnaryTests_02yfsay">
+          <text>"GB+F"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1sghhys">
+          <text>"Infrastruktur"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0t15ceg">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0ihalth">
+          <text>"Daniel Wyder", "Marco Guntern"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1g03eq7">
+        <inputEntry id="UnaryTests_1fq6kpe">
+          <text>"DU"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_078fcgi">
+          <text>"Infrastruktur"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1eyrgp6">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_00f8ytt">
+          <text>"Daniel Pixley", "Klaus Juch", "Roland Pfaffen", "Roger Aerschmann", "Severin Gutzwiler", "Dr. Ulrich Schäffeler", "Martin Johner"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1lpk3t6">
+        <inputEntry id="UnaryTests_1qeknj8">
+          <text>"K3"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0wf1qvf">
+          <text>"Infrastruktur"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1kuok2v">
+          <text>"Alptransit"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0v615xk">
+          <text>"Daniel Pixley"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_016km8t">
+        <inputEntry id="UnaryTests_0evpdhw">
+          <text>"K3"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_04bxwzj">
+          <text>"Infrastruktur"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_198dghr">
+          <text>"Liegenschaften"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0f0de8f">
+          <text>"Klaus Juch"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0vg9ywu">
+        <inputEntry id="UnaryTests_15i4n2e">
+          <text>"K3"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0njcf5b">
+          <text>"Infrastruktur"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_03pnfc7">
+          <text>"Betrieb"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1otixtc">
+          <text>"Roland Pfaffen"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_13htf4y">
+        <inputEntry id="UnaryTests_1a6phmt">
+          <text>"K3"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1m46qoc">
+          <text>"Infrastruktur"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_08ft2lc">
+          <text>"AnlagenUndProjekte"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0g8z18l">
+          <text>"Roger Aerschmann"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0u5681w">
+        <inputEntry id="UnaryTests_1f06nij">
+          <text>"K3"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_03xiqgk">
+          <text>"Infrastruktur"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1jibwle">
+          <text>"BauUndUnterhalt"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1hhorjc">
+          <text>"Severin Gutzwiller"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1kpqgwq">
+        <inputEntry id="UnaryTests_18poeb3">
+          <text>"K3"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_14tx2ib">
+          <text>"Infrastruktur"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_01yart0">
+          <text>"Netzentwicklung"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_12mc45w">
+          <text>"Dr. Ulrich Schäffeler"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0v29t4h">
+        <inputEntry id="UnaryTests_1hs592h">
+          <text>"K3"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0dlyk3n">
+          <text>"Infrastruktur"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0hdi2cz">
+          <text>"Stab"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0ntnwto">
+          <text>"Martin Johner"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1srrycp">
+        <inputEntry id="UnaryTests_1jnhmu6">
+          <text>"K4"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_10kp2jp">
+          <text>"Infrastruktur"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0bwjwjn">
+          <text>"Liegenschaften"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0ip2g8q">
+          <text>"Peter Knuch", "Patrik Bürki", "Joel Pascal Buntschu", "Michel Giudici"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0nijj7v">
+        <inputEntry id="UnaryTests_0v60503">
+          <text>"K4"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1r4y0nn">
+          <text>"Infrastruktur"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0r2ng5j">
+          <text>"Betrieb"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0y3v3hu">
+          <text>"Martin Wyss", "Daniel Schmocker", "Thomas Friedli", "Marco Faita"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0b195hp">
+        <inputEntry id="UnaryTests_1nwpmbz">
+          <text>"K4"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0w5pkdp">
+          <text>"Infrastruktur"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1hgdi05">
+          <text>"AnlagenUndProjekte"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1qhadg7">
+          <text>"Martin Isler", "Benjamin Märklin", "Sven Scherer", "Martin Renggli", "Olivier Lehrmann", "Urs Guggisberg"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0rsk2wu">
+        <inputEntry id="UnaryTests_0ua5c49">
+          <text>"K4"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1olh1yr">
+          <text>"Infrastruktur"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0958cl3">
+          <text>"BauUndUnterhalt"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0rm1y67">
+          <text>"Daniel Urs Müller", "Daniel Urs Müller", "Patrick Gasser", "Stefan Zurwerra", "vakant"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1gym8do">
+        <inputEntry id="UnaryTests_0qkx2l7">
+          <text>"K4"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_12zvx98">
+          <text>"Infrastruktur"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0vxdwyo">
+          <text>"Netzentwicklung"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1typvrb">
+          <text>"Stefan Bollinger", "Natalie Beck Torres", "Manuel Juon"</text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+</definitions>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/DMN/20151101/dmn.xsd" xmlns:camunda="http://camunda.org/schema/1.0/dmn" id="Definitions_1jetefe" name="DRD" namespace="http://camunda.org/schema/1.0/dmn">
+  <decision id="Decision_13nyxsf" name="Decision 1">
+    <decisionTable id="decisionTable_1">
+      <input id="input_1" label="Purpose" camunda:inputVariable="FormField_3pkf77m">
+        <inputExpression id="inputExpression_1" typeRef="string">
+          <text></text>
+        </inputExpression>
+      </input>
+      <output id="output_1" label="Unterschriftspartei 1" name="Signer1" typeRef="string" />
+      <output id="OutputClause_1uaypux" label="Unterschriftspartei 2" name="Signer2" typeRef="string" />
+      <output id="OutputClause_019ka9t" label="Unterschriftspartei 3" name="Signer3" typeRef="string" />
+      <output id="OutputClause_0l61m9m" label="Unterschriftspartei 4" name="Signer4" typeRef="string" />
+      <rule id="DecisionRule_0lzhfow">
+        <inputEntry id="UnaryTests_1cl5hpw">
+          <text>"_4.12"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_15t66fs">
+          <text>"GB"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_0vhxtbf">
+          <text>"ProF"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_1ssdtaw">
+          <text></text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_1ygwown">
+          <text></text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_00i63p6">
+        <inputEntry id="UnaryTests_0djtny9">
+          <text>"_4.13"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0k51c6k">
+          <text>"GB"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_1wbw9l9">
+          <text>"ProF"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_1bhvilx">
+          <text></text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_04xb75v">
+          <text></text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1679t4u">
+        <inputEntry id="UnaryTests_1m9cs9k">
+          <text>"_4.14"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_104mzx3">
+          <text>"GB"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_12pd3wc">
+          <text>"DU"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_0qg90jx">
+          <text>"ProF"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_0k1yae6">
+          <text>"K3"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1vbc880">
+        <inputEntry id="UnaryTests_1a40432">
+          <text>"_4.15"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1tj1yx2">
+          <text>"GB"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_1717eq3">
+          <text>"DU"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_1737ifb">
+          <text>"ProF"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_1cy7kzk">
+          <text>"K3"</text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+</definitions>
