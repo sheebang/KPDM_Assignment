@@ -32,7 +32,7 @@
           <text></text>
         </inputEntry>
         <outputEntry id="LiteralExpression_1ihfepx">
-          <text>"Rudolf Stämpfli", "Renate Amstutz Bettschart", "Viola Amherd", "Bernhard Antener", "Lorenz Bösch", "Viviana Buchmann-Tosi", "Martin Bütikofer", "Ueli Dietiker", "Josef Küttel"</text>
+          <text>"Rudolf Stämpfli, Renate Amstutz Bettschart, Viola Amherd, Bernhard Antener, Lorenz Bösch, Viviana Buchmann-Tosi, Martin Bütikofer, Ueli Dietiker, Josef Küttel"</text>
         </outputEntry>
       </rule>
       <rule id="DecisionRule_037fitk">
@@ -46,7 +46,7 @@
           <text></text>
         </inputEntry>
         <outputEntry id="LiteralExpression_0hs84qv">
-          <text>"Jean-Michel Cina", "Barbara Egger-Jenzer", "Philippe Gauderon", "Josef Küttel", "Karl Martin Schwaar", "Bernard Guillelmon", "Peter Kruch", "Jürg Viktor Zimmermann", "Matthias Johannes Kurmann", "Daniel Wyder", "Franziska Jermann", "Philippe Racine", "Bruno Wyssmüller", "Lorenz Josef Bösch", "Sabine Beatrice Steiger", "Klaus Helmut Juch", "Martin Bütikofer", "Ulrich Dietiker", "Thomas Friedli", "Markus Alfred Meier", "Viviana Maria Buchmann-Tosi", "Isabelle Käppeli", "Thomas Andreas Müller", "Dr. Rudolf Stämpfli", "Daniel Leuenberger", "Renate Amstutz Bettschart", "Luca Baroni"</text>
+          <text>"Jean-Michel Cina, Barbara Egger-Jenzer, Philippe Gauderon, Josef Küttel, Karl Martin Schwaar, Bernard Guillelmon, Peter Kruch, Jürg Viktor Zimmermann, Matthias Johannes Kurmann, Daniel Wyder, Franziska Jermann, Philippe Racine, Bruno Wyssmüller, Lorenz Josef Bösch, Sabine Beatrice Steiger, Klaus Helmut Juch, Martin Bütikofer, Ulrich Dietiker, Thomas Friedli, Markus Alfred Meier, Viviana Maria Buchmann-Tosi, Isabelle Käppeli, Thomas Andreas Müller, Dr. Rudolf Stämpfli, Daniel Leuenberger, Renate Amstutz Bettschart, Luca Baroni"</text>
         </outputEntry>
       </rule>
       <rule id="DecisionRule_1my6j14">
@@ -60,7 +60,7 @@
           <text></text>
         </inputEntry>
         <outputEntry id="LiteralExpression_1es49s1">
-          <text>"Bernard Guillelmon", "Luca Baroni", "Franziska Jerman", "Daniel Wyder", "Daniel Hofer", "Peter Fankhauser", "Daniel Leuenberger", "Dr. Dirk Stahl"</text>
+          <text>"Bernard Guillelmon, Luca Baroni, Franziska Jerman, Daniel Wyder, Daniel Hofer, Peter Fankhauser, Daniel Leuenberger, Dr. Dirk Stahl"</text>
         </outputEntry>
       </rule>
       <rule id="DecisionRule_1ln5sry">
@@ -102,7 +102,7 @@
           <text></text>
         </inputEntry>
         <outputEntry id="LiteralExpression_1ccf1cw">
-          <text>"Dr. Dirk Stahl", "Marco Guntern"</text>
+          <text>"Dr. Dirk Stahl, Marco Guntern"</text>
         </outputEntry>
       </rule>
       <rule id="DecisionRule_1losjum">
@@ -186,7 +186,7 @@
           <text>"Finanzen"</text>
         </inputEntry>
         <outputEntry id="LiteralExpression_16dt3z5">
-          <text>"Monika Lauper", "Sybille Castelberg"</text>
+          <text>"Monika Lauper, Sybille Castelberg"</text>
         </outputEntry>
       </rule>
       <rule id="DecisionRule_02zspnx">
@@ -200,7 +200,7 @@
           <text>"ProduktionEinkauf"</text>
         </inputEntry>
         <outputEntry id="LiteralExpression_1cw9zaq">
-          <text>"M. Schellhammer", "Stephan Moll", "Samuel Etter", "M. Böhm", "Roland Rieder", "Geanina Boll"</text>
+          <text>"M. Schellhammer, Stephan Moll, Samuel Etter, M. Böhm, Roland Rieder, Geanina Boll"</text>
         </outputEntry>
       </rule>
       <rule id="DecisionRule_1eagct3">
@@ -214,7 +214,7 @@
           <text>"ProduktmngtVertrieb"</text>
         </inputEntry>
         <outputEntry id="LiteralExpression_070p123">
-          <text>"Christian Stäubli", "Silvan Munz"</text>
+          <text>"Christian Stäubli, Silvan Munz"</text>
         </outputEntry>
       </rule>
       <rule id="DecisionRule_1bj32z8">
@@ -242,7 +242,7 @@
           <text></text>
         </inputEntry>
         <outputEntry id="LiteralExpression_17yyiki">
-          <text>"Daniel Leuenberger", "Marco Guntern"</text>
+          <text>"Daniel Leuenberger, Marco Guntern"</text>
         </outputEntry>
       </rule>
       <rule id="DecisionRule_0w3wkv8">
@@ -256,7 +256,7 @@
           <text></text>
         </inputEntry>
         <outputEntry id="LiteralExpression_0l6zi9k">
-          <text>"Marc Zesiger", "David Spale", "Roger Bühlmann"</text>
+          <text>"Marc Zesiger, David Spale, Roger Bühlmann"</text>
         </outputEntry>
       </rule>
       <rule id="DecisionRule_12v524t">
@@ -312,7 +312,7 @@
           <text>"ApplikatMngt"</text>
         </inputEntry>
         <outputEntry id="LiteralExpression_1wj9xsf">
-          <text>"Maro Weltli", "Stefan Blaser", "Thomas Frei", "Manuel Kohler", "Rolf Tiermann"</text>
+          <text>"Maro Weltli, Stefan Blaser, Thomas Frei, Manuel Kohler, Rolf Tiermann"</text>
         </outputEntry>
       </rule>
       <rule id="DecisionRule_0lg65u6">
@@ -326,7 +326,7 @@
           <text>"PlanungUndSteuerung"</text>
         </inputEntry>
         <outputEntry id="LiteralExpression_17gd7z5">
-          <text>"Florian Baumann", "Peter Lange", "Anthony Smith", "Thomas Wuillemin"</text>
+          <text>"Florian Baumann, Peter Lange, Anthony Smith, Thomas Wuillemin"</text>
         </outputEntry>
       </rule>
       <rule id="DecisionRule_0t83ak5">
@@ -340,7 +340,7 @@
           <text>"Betrieb"</text>
         </inputEntry>
         <outputEntry id="LiteralExpression_1ljwry2">
-          <text>"Markus Mischler", "Thomas Edibauer", "Ruedi Oswald", "Roger Bühlmann"</text>
+          <text>"Markus Mischler, Thomas Edibauer, Ruedi Oswald, Roger Bühlmann"</text>
         </outputEntry>
       </rule>
       <rule id="DecisionRule_0y8oydu">
@@ -368,7 +368,7 @@
           <text></text>
         </inputEntry>
         <outputEntry id="LiteralExpression_03645ei">
-          <text>"Peter Fankhauser", "Marco Guntern"</text>
+          <text>"Peter Fankhauser, Marco Guntern"</text>
         </outputEntry>
       </rule>
       <rule id="DecisionRule_1fto1vi">
@@ -382,7 +382,7 @@
           <text></text>
         </inputEntry>
         <outputEntry id="LiteralExpression_0l4mrdy">
-          <text>"Thomas Stupp", "Martin Leu", "Armin Lederer", "Thomas Krieg"</text>
+          <text>"Thomas Stupp, Martin Leu, Armin Lederer, Thomas Krieg"</text>
         </outputEntry>
       </rule>
       <rule id="DecisionRule_1aijljb">
@@ -480,7 +480,7 @@
           <text>"KapazitaetsplUndFlottenmg"</text>
         </inputEntry>
         <outputEntry id="LiteralExpression_1ngeaz3">
-          <text>"Benedikt Gerth", "Michael Kilchemann", "Reto Wagner", "Marcus Lindemann", "Matthias Kunz"</text>
+          <text>"Benedikt Gerth, Michael Kilchemann, Reto Wagner, Marcus Lindemann, Matthias Kunz"</text>
         </outputEntry>
       </rule>
       <rule id="DecisionRule_0mobvnt">
@@ -494,7 +494,7 @@
           <text>"ZugUndLokpers"</text>
         </inputEntry>
         <outputEntry id="LiteralExpression_1ahpfsk">
-          <text>"Roger Blend", "Ulrich Kohler", "Bruno Jaun", "Christian Hohnbaum", "Armin Meusburger"</text>
+          <text>"Roger Blend, Ulrich Kohler, Bruno Jaun, Christian Hohnbaum, Armin Meusburger"</text>
         </outputEntry>
       </rule>
       <rule id="DecisionRule_02ve7vh">
@@ -508,7 +508,7 @@
           <text>"DreiR-Geschaefte"</text>
         </inputEntry>
         <outputEntry id="LiteralExpression_115ylcu">
-          <text>"Etienne Hueber", "Beat Freiburghaus", "Wilhelm Rieder", "Rene Michel"</text>
+          <text>"Etienne Hueber, Beat Freiburghaus, Wilhelm Rieder, Rene Michel"</text>
         </outputEntry>
       </rule>
       <rule id="DecisionRule_0kgioea">
@@ -522,7 +522,7 @@
           <text>"LenkungUndbnIH"</text>
         </inputEntry>
         <outputEntry id="LiteralExpression_1ofqiue">
-          <text>"Marc Lädrach", "Peter Tschanz", "Mike Scheider", "Marcel Dietrich", "Kaspar A. Streiff"</text>
+          <text>"Marc Lädrach, Peter Tschanz, Mike Scheider, Marcel Dietrich, Kaspar A. Streiff"</text>
         </outputEntry>
       </rule>
       <rule id="DecisionRule_0r7xbld">
@@ -550,7 +550,7 @@
           <text></text>
         </inputEntry>
         <outputEntry id="LiteralExpression_1vt4ga5">
-          <text>"Daniel Hofer", "Marco Guntern"</text>
+          <text>"Daniel Hofer, Marco Guntern"</text>
         </outputEntry>
       </rule>
       <rule id="DecisionRule_085nst5">
@@ -564,7 +564,7 @@
           <text></text>
         </inputEntry>
         <outputEntry id="LiteralExpression_0j1swg6">
-          <text>"Markus Dössegger", "Daniel Hofer", "Martin Reichenbach", "Sandro Borrelli", "Claude Merlach", "Edgar Schenk", "Urs Hochuli"</text>
+          <text>"Markus Dössegger, Daniel Hofer, Martin Reichenbach, Sandro Borrelli, Claude Merlach, Edgar Schenk, Urs Hochuli"</text>
         </outputEntry>
       </rule>
       <rule id="DecisionRule_1f5bekz">
@@ -676,7 +676,7 @@
           <text>"Vertrieb"</text>
         </inputEntry>
         <outputEntry id="LiteralExpression_0tjuxjm">
-          <text>"Beat Theiler", "Andre von Arx", "Pierre-Alain Michel"</text>
+          <text>"Beat Theiler, Andre von Arx, Pierre-Alain Michel"</text>
         </outputEntry>
       </rule>
       <rule id="DecisionRule_1m02su1">
@@ -704,7 +704,7 @@
           <text>"Marketing"</text>
         </inputEntry>
         <outputEntry id="LiteralExpression_0a9f6cc">
-          <text>"Michael Nussbaumer", "Christian Schneider", "Matin Gäggeler", "Dominique Berger"</text>
+          <text>"Michael Nussbaumer, Christian Schneider, Matin Gäggeler, Dominique Berger"</text>
         </outputEntry>
       </rule>
       <rule id="DecisionRule_0ej8lsg">
@@ -718,7 +718,7 @@
           <text>"Schiff"</text>
         </inputEntry>
         <outputEntry id="LiteralExpression_05s1u5d">
-          <text>"Kaspar Stettler", "Rene Anliker", "Ralph Darmstädter"</text>
+          <text>"Kaspar Stettler, Rene Anliker, Ralph Darmstädter"</text>
         </outputEntry>
       </rule>
       <rule id="DecisionRule_125b8oj">
@@ -732,7 +732,7 @@
           <text>"Bahn"</text>
         </inputEntry>
         <outputEntry id="LiteralExpression_0blxxyz">
-          <text>"H.-B. Fiechter", "Florian Kappler", "Stephanie Thalmann"</text>
+          <text>"H.-B. Fiechter, Florian Kappler, Stephanie Thalmann"</text>
         </outputEntry>
       </rule>
       <rule id="DecisionRule_0ldhtee">
@@ -746,7 +746,7 @@
           <text>"Autoverlad"</text>
         </inputEntry>
         <outputEntry id="LiteralExpression_1486vyw">
-          <text>"Daniel Waldvogel", "Andrea Luginbühl", "Urs Hochuli"</text>
+          <text>"Daniel Waldvogel, Andrea Luginbühl, Urs Hochuli"</text>
         </outputEntry>
       </rule>
       <rule id="DecisionRule_0bujqld">
@@ -774,7 +774,7 @@
           <text></text>
         </inputEntry>
         <outputEntry id="LiteralExpression_0ihalth">
-          <text>"Daniel Wyder", "Marco Guntern"</text>
+          <text>"Daniel Wyder, Marco Guntern"</text>
         </outputEntry>
       </rule>
       <rule id="DecisionRule_1g03eq7">
@@ -788,7 +788,7 @@
           <text></text>
         </inputEntry>
         <outputEntry id="LiteralExpression_00f8ytt">
-          <text>"Daniel Pixley", "Klaus Juch", "Roland Pfaffen", "Roger Aerschmann", "Severin Gutzwiler", "Dr. Ulrich Schäffeler", "Martin Johner"</text>
+          <text>"Daniel Pixley, Klaus Juch, Roland Pfaffen, Roger Aerschmann, Severin Gutzwiler, Dr. Ulrich Schäffeler, Martin Johner"</text>
         </outputEntry>
       </rule>
       <rule id="DecisionRule_1lpk3t6">
@@ -900,7 +900,7 @@
           <text>"Liegenschaften"</text>
         </inputEntry>
         <outputEntry id="LiteralExpression_0ip2g8q">
-          <text>"Peter Knuch", "Patrik Bürki", "Joel Pascal Buntschu", "Michel Giudici"</text>
+          <text>"Peter Knuch, Patrik Bürki, Joel Pascal Buntschu, Michel Giudici"</text>
         </outputEntry>
       </rule>
       <rule id="DecisionRule_0nijj7v">
@@ -914,7 +914,7 @@
           <text>"Betrieb"</text>
         </inputEntry>
         <outputEntry id="LiteralExpression_0y3v3hu">
-          <text>"Martin Wyss", "Daniel Schmocker", "Thomas Friedli", "Marco Faita"</text>
+          <text>"Martin Wyss, Daniel Schmocker, Thomas Friedli, Marco Faita"</text>
         </outputEntry>
       </rule>
       <rule id="DecisionRule_0b195hp">
@@ -928,7 +928,7 @@
           <text>"AnlagenUndProjekte"</text>
         </inputEntry>
         <outputEntry id="LiteralExpression_1qhadg7">
-          <text>"Martin Isler", "Benjamin Märklin", "Sven Scherer", "Martin Renggli", "Olivier Lehrmann", "Urs Guggisberg"</text>
+          <text>"Martin Isler, Benjamin Märklin, Sven Scherer, Martin Renggli, Olivier Lehrmann, Urs Guggisberg"</text>
         </outputEntry>
       </rule>
       <rule id="DecisionRule_0rsk2wu">
@@ -942,7 +942,7 @@
           <text>"BauUndUnterhalt"</text>
         </inputEntry>
         <outputEntry id="LiteralExpression_0rm1y67">
-          <text>"Daniel Urs Müller", "Daniel Urs Müller", "Patrick Gasser", "Stefan Zurwerra", "vakant"</text>
+          <text>"Daniel Urs Müller, Daniel Urs Müller, Patrick Gasser, Stefan Zurwerra", vakant"</text>
         </outputEntry>
       </rule>
       <rule id="DecisionRule_1gym8do">
@@ -956,7 +956,7 @@
           <text>"Netzentwicklung"</text>
         </inputEntry>
         <outputEntry id="LiteralExpression_1typvrb">
-          <text>"Stefan Bollinger", "Natalie Beck Torres", "Manuel Juon"</text>
+          <text>"Stefan Bollinger, Natalie Beck Torres, Manuel Juon"</text>
         </outputEntry>
       </rule>
     </decisionTable>
