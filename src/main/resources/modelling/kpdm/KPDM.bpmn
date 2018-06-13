@@ -8,9 +8,9 @@
       <bpmn:extensionElements>
         <camunda:formData>
           <camunda:formField id="kompetenzkategorie" label="Kompetenzkategorie" type="enum" defaultValue="finanzen">
+            <camunda:value id="finanzen" name="Finanzen" />
             <camunda:value id="fuehrung" name="Führung und Organisation" />
             <camunda:value id="planung" name="Planung und Kontrolle" />
-            <camunda:value id="finanzen" name="Finanzen" />
             <camunda:value id="personelles" name="Personelles und Soziales" />
           </camunda:formField>
         </camunda:formData>
