@@ -10,7 +10,7 @@
       <output id="OutputClause_0c6yse5" label="Unterschriftspartei 1" name="Signer1" typeRef="string" />
       <rule id="DecisionRule_1bzraaj">
         <inputEntry id="UnaryTests_0mjrxvr">
-          <text>"_2.8"</text>
+          <text>"_2.8a"</text>
         </inputEntry>
         <outputEntry id="LiteralExpression_1yc8zis">
           <text>"VR"</text>
@@ -18,7 +18,7 @@
       </rule>
       <rule id="DecisionRule_174zb4i">
         <inputEntry id="UnaryTests_1iuvrsb">
-          <text>"_2.8"</text>
+          <text>"_2.8b"</text>
         </inputEntry>
         <outputEntry id="LiteralExpression_1fst1tm">
           <text>"GL"</text>
@@ -26,7 +26,7 @@
       </rule>
       <rule id="DecisionRule_1j7qimo">
         <inputEntry id="UnaryTests_18vwcro">
-          <text>"_2.8"</text>
+          <text>"_2.8c"</text>
         </inputEntry>
         <outputEntry id="LiteralExpression_0kdx5ur">
           <text>"GB"</text>

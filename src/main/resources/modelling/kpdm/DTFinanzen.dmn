@@ -152,7 +152,7 @@
         </outputEntry>
       </rule>
       <rule id="DecisionRule_192eevq">
-        <description>Bei Sofortmassnahme GB+F</description>
+        <description></description>
         <inputEntry id="UnaryTests_0j3y2dp">
           <text>"_3.7"</text>
         </inputEntry>
