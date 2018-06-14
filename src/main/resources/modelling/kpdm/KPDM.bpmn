@@ -305,7 +305,7 @@ execution.setVariable("combinedResult", combinedResult)</camunda:script>
       <bpmn:outgoing>SequenceFlow_08vsdtf</bpmn:outgoing>
     </bpmn:userTask>
     <bpmn:sequenceFlow id="SequenceFlow_00u4f2h" sourceRef="Task_0l64wn8" targetRef="Task_0sgcatl" />
-    <bpmn:scriptTask id="Task_0l64wn8" name="Create a var" scriptFormat="javascript">
+    <bpmn:scriptTask id="Task_0l64wn8" name="Resultate sammeln und als Collection weiter geben" scriptFormat="javascript">
       <bpmn:incoming>SequenceFlow_1bnl8p1</bpmn:incoming>
       <bpmn:outgoing>SequenceFlow_00u4f2h</bpmn:outgoing>
       <bpmn:script>var logger = java.util.logging.Logger;
@@ -345,7 +345,7 @@ log.info("Collection.elements " + collection );</bpmn:script>
       <bpmn:endEvent id="EndEvent_159lyji">
         <bpmn:incoming>SequenceFlow_0u0j7p7</bpmn:incoming>
       </bpmn:endEvent>
-      <bpmn:userTask id="UserTask_1t3pt5z" name="Signatures needed" camunda:assignee="demo">
+      <bpmn:userTask id="UserTask_1t3pt5z" name="Benötigte Unterschcriften" camunda:assignee="demo">
         <bpmn:extensionElements>
           <camunda:formData>
             <camunda:formField id="FormField_1mc39eb" label="Following signatures gathered:  ${collName}" type="boolean" defaultValue="true" />
