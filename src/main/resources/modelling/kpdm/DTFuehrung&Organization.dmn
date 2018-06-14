@@ -10,22 +10,11 @@
           <text></text>
         </inputExpression>
       </input>
-      <input id="InputClause_1101pre" label="Rolle Information">
-        <inputExpression id="LiteralExpression_0ofa1zm" typeRef="string">
-          <text></text>
-        </inputExpression>
-        <inputValues id="UnaryTests_0a53qqd">
-          <text>"Leistungserbringer","Leistungsempfänger"</text>
-        </inputValues>
-      </input>
       <output id="output_1" label="Unterschriftspartei 1" name="Signer1" typeRef="string" />
       <output id="OutputClause_1dzwran" label="Unterschriftspartei 2" name="Signer2" typeRef="string" />
       <rule id="DecisionRule_1s80p55">
         <inputEntry id="UnaryTests_07d36w1">
           <text>"_1.10"</text>
-        </inputEntry>
-        <inputEntry id="UnaryTests_01qhz9n">
-          <text></text>
         </inputEntry>
         <outputEntry id="LiteralExpression_0da0kd8">
           <text>"GB"</text>
@@ -38,9 +27,6 @@
         <inputEntry id="UnaryTests_0ncivw5">
           <text>"_1.11"</text>
         </inputEntry>
-        <inputEntry id="UnaryTests_1gfou82">
-          <text></text>
-        </inputEntry>
         <outputEntry id="LiteralExpression_0q7cs1f">
           <text>"GB"</text>
         </outputEntry>
@@ -48,26 +34,9 @@
           <text></text>
         </outputEntry>
       </rule>
-      <rule id="DecisionRule_1piuo02">
-        <inputEntry id="UnaryTests_0hn1ddk">
-          <text>"_1.15"</text>
-        </inputEntry>
-        <inputEntry id="UnaryTests_0ipybv1">
-          <text>"Leistungserbringer"</text>
-        </inputEntry>
-        <outputEntry id="LiteralExpression_0gzbaxx">
-          <text>"GB"</text>
-        </outputEntry>
-        <outputEntry id="LiteralExpression_1nag3vo">
-          <text>"IY"</text>
-        </outputEntry>
-      </rule>
       <rule id="DecisionRule_0omj1cg">
         <inputEntry id="UnaryTests_1ufo8y0">
           <text>"_1.15"</text>
-        </inputEntry>
-        <inputEntry id="UnaryTests_1429vka">
-          <text>"Leistungsempfänger"</text>
         </inputEntry>
         <outputEntry id="LiteralExpression_1288yah">
           <text>"GB"</text>
@@ -76,26 +45,9 @@
           <text>"DU"</text>
         </outputEntry>
       </rule>
-      <rule id="DecisionRule_12x8pso">
-        <inputEntry id="UnaryTests_07uexob">
-          <text>"_1.17"</text>
-        </inputEntry>
-        <inputEntry id="UnaryTests_140n5r1">
-          <text>"Leistungserbringer"</text>
-        </inputEntry>
-        <outputEntry id="LiteralExpression_1ilis46">
-          <text>"GB"</text>
-        </outputEntry>
-        <outputEntry id="LiteralExpression_0v287rg">
-          <text>"IY"</text>
-        </outputEntry>
-      </rule>
       <rule id="DecisionRule_15lebsl">
         <inputEntry id="UnaryTests_0u4xzmi">
           <text>"_1.17"</text>
-        </inputEntry>
-        <inputEntry id="UnaryTests_1nku7px">
-          <text>"Leistungsempfänger"</text>
         </inputEntry>
         <outputEntry id="LiteralExpression_0eozoby">
           <text>"GB"</text>
@@ -108,9 +60,6 @@
         <inputEntry id="UnaryTests_01ossc3">
           <text>"_1.28"</text>
         </inputEntry>
-        <inputEntry id="UnaryTests_0fpkkqa">
-          <text></text>
-        </inputEntry>
         <outputEntry id="LiteralExpression_0w96v1j">
           <text>"GB"</text>
         </outputEntry>
@@ -122,9 +71,6 @@
         <inputEntry id="UnaryTests_1cmuapw">
           <text>"_1.42"</text>
         </inputEntry>
-        <inputEntry id="UnaryTests_1ai5g46">
-          <text></text>
-        </inputEntry>
         <outputEntry id="LiteralExpression_1s8qsm4">
           <text>"GB"</text>
         </outputEntry>
@@ -135,9 +81,6 @@
       <rule id="DecisionRule_18xaq6j">
         <inputEntry id="UnaryTests_16vwqpo">
           <text>"_1.9"</text>
-        </inputEntry>
-        <inputEntry id="UnaryTests_0by4ubz">
-          <text></text>
         </inputEntry>
         <outputEntry id="LiteralExpression_0t3ca8q">
           <text>"GL"</text>

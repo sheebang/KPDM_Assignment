@@ -7,26 +7,10 @@
           <text></text>
         </inputExpression>
       </input>
-      <input id="InputClause_15dk0so" label="Scope">
-        <inputExpression id="LiteralExpression_03kjx2u" typeRef="string">
-          <text></text>
-        </inputExpression>
-      </input>
-      <input id="InputClause_0jtelwa" label="Infrastruktur">
-        <inputExpression id="LiteralExpression_0cheuzq" typeRef="boolean">
-          <text></text>
-        </inputExpression>
-      </input>
       <output id="OutputClause_0c6yse5" label="Unterschriftspartei 1" name="Signer1" typeRef="string" />
       <rule id="DecisionRule_1bzraaj">
         <inputEntry id="UnaryTests_0mjrxvr">
           <text>"_2.8"</text>
-        </inputEntry>
-        <inputEntry id="UnaryTests_0qosdsj">
-          <text>"gesamtunternehmerisch"</text>
-        </inputEntry>
-        <inputEntry id="UnaryTests_0sobbcl">
-          <text></text>
         </inputEntry>
         <outputEntry id="LiteralExpression_1yc8zis">
           <text>"VR"</text>
@@ -36,12 +20,6 @@
         <inputEntry id="UnaryTests_1iuvrsb">
           <text>"_2.8"</text>
         </inputEntry>
-        <inputEntry id="UnaryTests_18jxu0h">
-          <text>"geschäftsbereichsübergreifend"</text>
-        </inputEntry>
-        <inputEntry id="UnaryTests_165xzx5">
-          <text></text>
-        </inputEntry>
         <outputEntry id="LiteralExpression_1fst1tm">
           <text>"GL"</text>
         </outputEntry>
@@ -50,12 +28,6 @@
         <inputEntry id="UnaryTests_18vwcro">
           <text>"_2.8"</text>
         </inputEntry>
-        <inputEntry id="UnaryTests_098npea">
-          <text>"bereichsintern"</text>
-        </inputEntry>
-        <inputEntry id="UnaryTests_1t2dab0">
-          <text></text>
-        </inputEntry>
         <outputEntry id="LiteralExpression_0kdx5ur">
           <text>"GB"</text>
         </outputEntry>
@@ -63,12 +35,6 @@
       <rule id="DecisionRule_0n9li0u">
         <inputEntry id="UnaryTests_0cvfrc4">
           <text>"_2.8.1"</text>
-        </inputEntry>
-        <inputEntry id="UnaryTests_172pa26">
-          <text></text>
-        </inputEntry>
-        <inputEntry id="UnaryTests_0czmqja">
-          <text>true</text>
         </inputEntry>
         <outputEntry id="LiteralExpression_0scuw3k">
           <text>"GB"</text>

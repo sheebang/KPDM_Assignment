@@ -12,11 +12,6 @@
           <text></text>
         </inputExpression>
       </input>
-      <input id="InputClause_1xz2fv5" label="Sofortmassnahme">
-        <inputExpression id="LiteralExpression_1qqtsva" typeRef="boolean">
-          <text></text>
-        </inputExpression>
-      </input>
       <output id="output_1" label="Unterschriftspartei 1" name="Signer1" typeRef="string" />
       <output id="OutputClause_17yqecf" label="Unterschriftspartei 2" name="Signer2" typeRef="string" />
       <output id="OutputClause_0uf4sgh" label="Unterschriftspartei 3" name="Signer3" typeRef="string" />
@@ -26,9 +21,6 @@
         </inputEntry>
         <inputEntry id="UnaryTests_0z1qlj7">
           <text>&gt;= 5000000</text>
-        </inputEntry>
-        <inputEntry id="UnaryTests_1osxf3b">
-          <text></text>
         </inputEntry>
         <outputEntry id="LiteralExpression_1rwqvmm">
           <text>"VR"</text>
@@ -47,9 +39,6 @@
         <inputEntry id="UnaryTests_05qzbl9">
           <text>[1000000..5000000[</text>
         </inputEntry>
-        <inputEntry id="UnaryTests_10juspq">
-          <text></text>
-        </inputEntry>
         <outputEntry id="LiteralExpression_0ypo3oc">
           <text>"GL"</text>
         </outputEntry>
@@ -66,9 +55,6 @@
         </inputEntry>
         <inputEntry id="UnaryTests_1f6qqsm">
           <text>[300000..1000000[</text>
-        </inputEntry>
-        <inputEntry id="UnaryTests_1pceuvw">
-          <text></text>
         </inputEntry>
         <outputEntry id="LiteralExpression_14fcvje">
           <text>"GB+F"</text>
@@ -87,9 +73,6 @@
         <inputEntry id="UnaryTests_0xdgpi3">
           <text>[100000..300000[</text>
         </inputEntry>
-        <inputEntry id="UnaryTests_157tjaf">
-          <text></text>
-        </inputEntry>
         <outputEntry id="LiteralExpression_1evxo84">
           <text>"DU"</text>
         </outputEntry>
@@ -106,9 +89,6 @@
         </inputEntry>
         <inputEntry id="UnaryTests_136zkn1">
           <text>[20000..100000[</text>
-        </inputEntry>
-        <inputEntry id="UnaryTests_172fkg7">
-          <text></text>
         </inputEntry>
         <outputEntry id="LiteralExpression_0z405xx">
           <text>"DU"</text>
@@ -127,9 +107,6 @@
         <inputEntry id="UnaryTests_06ztaxu">
           <text>[1..20000[</text>
         </inputEntry>
-        <inputEntry id="UnaryTests_1sdhfxc">
-          <text></text>
-        </inputEntry>
         <outputEntry id="LiteralExpression_0umbm02">
           <text>"DU"</text>
         </outputEntry>
@@ -146,9 +123,6 @@
         </inputEntry>
         <inputEntry id="UnaryTests_1idmwb1">
           <text>&gt;= 5000000</text>
-        </inputEntry>
-        <inputEntry id="UnaryTests_0vwkjoy">
-          <text></text>
         </inputEntry>
         <outputEntry id="LiteralExpression_05j4nou">
           <text>"VR"</text>
@@ -167,9 +141,6 @@
         <inputEntry id="UnaryTests_1pcausb">
           <text>[100000..5000000[</text>
         </inputEntry>
-        <inputEntry id="UnaryTests_0mdhvo9">
-          <text></text>
-        </inputEntry>
         <outputEntry id="LiteralExpression_0cn1nqr">
           <text>"GL"</text>
         </outputEntry>
@@ -180,35 +151,13 @@
           <text></text>
         </outputEntry>
       </rule>
-      <rule id="DecisionRule_19wcmai">
-        <inputEntry id="UnaryTests_1m6vqyd">
-          <text>"_3.7"</text>
-        </inputEntry>
-        <inputEntry id="UnaryTests_0x6dok3">
-          <text>[1..100000[</text>
-        </inputEntry>
-        <inputEntry id="UnaryTests_0jax4n1">
-          <text>true</text>
-        </inputEntry>
-        <outputEntry id="LiteralExpression_00ylele">
-          <text>"GB+F"</text>
-        </outputEntry>
-        <outputEntry id="LiteralExpression_04mq02m">
-          <text></text>
-        </outputEntry>
-        <outputEntry id="LiteralExpression_06fqhdo">
-          <text></text>
-        </outputEntry>
-      </rule>
       <rule id="DecisionRule_192eevq">
+        <description>Bei Sofortmassnahme GB+F</description>
         <inputEntry id="UnaryTests_0j3y2dp">
           <text>"_3.7"</text>
         </inputEntry>
         <inputEntry id="UnaryTests_0i7pokw">
           <text>[1..100000[</text>
-        </inputEntry>
-        <inputEntry id="UnaryTests_0fhukgd">
-          <text>false</text>
         </inputEntry>
         <outputEntry id="LiteralExpression_0aybvmm">
           <text>"DU"</text>
@@ -227,9 +176,6 @@
         <inputEntry id="UnaryTests_13eww1e">
           <text>&gt;= 5000000</text>
         </inputEntry>
-        <inputEntry id="UnaryTests_0hsueir">
-          <text></text>
-        </inputEntry>
         <outputEntry id="LiteralExpression_0gdisb8">
           <text>"VR"</text>
         </outputEntry>
@@ -246,9 +192,6 @@
         </inputEntry>
         <inputEntry id="UnaryTests_0391hai">
           <text>[1000000..5000000[</text>
-        </inputEntry>
-        <inputEntry id="UnaryTests_0dung0j">
-          <text></text>
         </inputEntry>
         <outputEntry id="LiteralExpression_0w1nlr8">
           <text>"GL"</text>
@@ -267,9 +210,6 @@
         <inputEntry id="UnaryTests_13lfp88">
           <text>[300000..1000000[</text>
         </inputEntry>
-        <inputEntry id="UnaryTests_05ljzqx">
-          <text></text>
-        </inputEntry>
         <outputEntry id="LiteralExpression_0t84pje">
           <text>"GB"</text>
         </outputEntry>
@@ -286,9 +226,6 @@
         </inputEntry>
         <inputEntry id="UnaryTests_0vn6f5t">
           <text>[1..300000[</text>
-        </inputEntry>
-        <inputEntry id="UnaryTests_03y6a5o">
-          <text></text>
         </inputEntry>
         <outputEntry id="LiteralExpression_0j5e5zs">
           <text>"DU"</text>
@@ -307,9 +244,6 @@
         <inputEntry id="UnaryTests_1uv6jvx">
           <text>&gt;=20000000</text>
         </inputEntry>
-        <inputEntry id="UnaryTests_0i7u37h">
-          <text></text>
-        </inputEntry>
         <outputEntry id="LiteralExpression_0gzga9l">
           <text>"VR"</text>
         </outputEntry>
@@ -326,9 +260,6 @@
         </inputEntry>
         <inputEntry id="UnaryTests_1jphfok">
           <text>[2000000..20000000[</text>
-        </inputEntry>
-        <inputEntry id="UnaryTests_15xfyda">
-          <text></text>
         </inputEntry>
         <outputEntry id="LiteralExpression_128jr00">
           <text>"GL"</text>
@@ -348,9 +279,6 @@
         <inputEntry id="UnaryTests_0e8dt1x">
           <text>[500000..2000000[</text>
         </inputEntry>
-        <inputEntry id="UnaryTests_1ivgwbg">
-          <text></text>
-        </inputEntry>
         <outputEntry id="LiteralExpression_1yl5hol">
           <text>"GB"</text>
         </outputEntry>
@@ -368,9 +296,6 @@
         </inputEntry>
         <inputEntry id="UnaryTests_0fn6ec0">
           <text>[200000..500000[</text>
-        </inputEntry>
-        <inputEntry id="UnaryTests_0om5h1x">
-          <text></text>
         </inputEntry>
         <outputEntry id="LiteralExpression_0d1qkkd">
           <text>"DU"</text>
@@ -390,9 +315,6 @@
         <inputEntry id="UnaryTests_1dogcag">
           <text>[1..200000[</text>
         </inputEntry>
-        <inputEntry id="UnaryTests_0gawkga">
-          <text></text>
-        </inputEntry>
         <outputEntry id="LiteralExpression_0r23gro">
           <text>"DU"</text>
         </outputEntry>
@@ -409,9 +331,6 @@
         </inputEntry>
         <inputEntry id="UnaryTests_0lw3lcq">
           <text>&gt;= 5000000</text>
-        </inputEntry>
-        <inputEntry id="UnaryTests_1w4ijs3">
-          <text></text>
         </inputEntry>
         <outputEntry id="LiteralExpression_199yqk0">
           <text>"GB+F"</text>
@@ -430,9 +349,6 @@
         <inputEntry id="UnaryTests_01sgg85">
           <text>[300000..5000000[</text>
         </inputEntry>
-        <inputEntry id="UnaryTests_1geij5q">
-          <text></text>
-        </inputEntry>
         <outputEntry id="LiteralExpression_0swd19w">
           <text>"GB+F"</text>
         </outputEntry>
@@ -449,9 +365,6 @@
         </inputEntry>
         <inputEntry id="UnaryTests_1tvm701">
           <text>[100000..300000[</text>
-        </inputEntry>
-        <inputEntry id="UnaryTests_1gp8kkf">
-          <text></text>
         </inputEntry>
         <outputEntry id="LiteralExpression_0er14y7">
           <text>"GB"</text>
@@ -470,9 +383,6 @@
         <inputEntry id="UnaryTests_08tqjkm">
           <text>[20000..100000[</text>
         </inputEntry>
-        <inputEntry id="UnaryTests_0gjnnhw">
-          <text></text>
-        </inputEntry>
         <outputEntry id="LiteralExpression_09a00bi">
           <text>"DU"</text>
         </outputEntry>
@@ -490,9 +400,6 @@
         <inputEntry id="UnaryTests_15v8asn">
           <text>[1..20000[</text>
         </inputEntry>
-        <inputEntry id="UnaryTests_1epywdc">
-          <text></text>
-        </inputEntry>
         <outputEntry id="LiteralExpression_1trmw1v">
           <text>"DU"</text>
         </outputEntry>
@@ -508,9 +415,6 @@
           <text>"_3.12"</text>
         </inputEntry>
         <inputEntry id="UnaryTests_1jp2zc8">
-          <text></text>
-        </inputEntry>
-        <inputEntry id="UnaryTests_1vagd1x">
           <text></text>
         </inputEntry>
         <outputEntry id="LiteralExpression_1ofiu2g">
@@ -530,9 +434,6 @@
         <inputEntry id="UnaryTests_00p5xi5">
           <text></text>
         </inputEntry>
-        <inputEntry id="UnaryTests_0gk24gn">
-          <text></text>
-        </inputEntry>
         <outputEntry id="LiteralExpression_1jb0qhh">
           <text>"GL"</text>
         </outputEntry>
@@ -549,9 +450,6 @@
         </inputEntry>
         <inputEntry id="UnaryTests_1yrkoc0">
           <text>&gt;=20000000</text>
-        </inputEntry>
-        <inputEntry id="UnaryTests_0d73c1p">
-          <text></text>
         </inputEntry>
         <outputEntry id="LiteralExpression_00uo6rz">
           <text>"VR"</text>
@@ -570,9 +468,6 @@
         <inputEntry id="UnaryTests_12o1np3">
           <text>[2000000..20000000[</text>
         </inputEntry>
-        <inputEntry id="UnaryTests_0xyl0zt">
-          <text></text>
-        </inputEntry>
         <outputEntry id="LiteralExpression_0hjcwsy">
           <text>"GL"</text>
         </outputEntry>
@@ -589,9 +484,6 @@
         </inputEntry>
         <inputEntry id="UnaryTests_00bbix8">
           <text>[500000..2000000[</text>
-        </inputEntry>
-        <inputEntry id="UnaryTests_13atxi1">
-          <text></text>
         </inputEntry>
         <outputEntry id="LiteralExpression_1sp6hce">
           <text>"GB"</text>
@@ -610,9 +502,6 @@
         <inputEntry id="UnaryTests_1umrdlx">
           <text>[300000..500000[</text>
         </inputEntry>
-        <inputEntry id="UnaryTests_05q6zab">
-          <text></text>
-        </inputEntry>
         <outputEntry id="LiteralExpression_189qkm3">
           <text>"DU"</text>
         </outputEntry>
@@ -629,9 +518,6 @@
         </inputEntry>
         <inputEntry id="UnaryTests_09jc8cs">
           <text>[100000..300000[</text>
-        </inputEntry>
-        <inputEntry id="UnaryTests_07g0rvr">
-          <text></text>
         </inputEntry>
         <outputEntry id="LiteralExpression_17x7p1n">
           <text>"DU"</text>
@@ -650,9 +536,6 @@
         <inputEntry id="UnaryTests_1yhe5xe">
           <text>[1..100000[</text>
         </inputEntry>
-        <inputEntry id="UnaryTests_1wf3l93">
-          <text></text>
-        </inputEntry>
         <outputEntry id="LiteralExpression_1r4o6rv">
           <text>"DU"</text>
         </outputEntry>
@@ -669,9 +552,6 @@
         </inputEntry>
         <inputEntry id="UnaryTests_0qf5mbn">
           <text>&gt;= 10000000</text>
-        </inputEntry>
-        <inputEntry id="UnaryTests_0qqaccq">
-          <text></text>
         </inputEntry>
         <outputEntry id="LiteralExpression_0h8p1p9">
           <text>"VR BLS Netz AG"</text>
@@ -690,9 +570,6 @@
         <inputEntry id="UnaryTests_07zzdn7">
           <text>[2000000..10000000[</text>
         </inputEntry>
-        <inputEntry id="UnaryTests_0014tb4">
-          <text></text>
-        </inputEntry>
         <outputEntry id="LiteralExpression_1xljpk5">
           <text>"GL"</text>
         </outputEntry>
@@ -709,9 +586,6 @@
         </inputEntry>
         <inputEntry id="UnaryTests_0yn4m8z">
           <text>[500000..2000000[</text>
-        </inputEntry>
-        <inputEntry id="UnaryTests_07lc6d2">
-          <text></text>
         </inputEntry>
         <outputEntry id="LiteralExpression_0ul77y4">
           <text>"GB+F"</text>
@@ -730,9 +604,6 @@
         <inputEntry id="UnaryTests_1dq28w0">
           <text>]100000..500000[</text>
         </inputEntry>
-        <inputEntry id="UnaryTests_12a0v9u">
-          <text></text>
-        </inputEntry>
         <outputEntry id="LiteralExpression_0z9l97r">
           <text>"DU"</text>
         </outputEntry>
@@ -749,9 +620,6 @@
         </inputEntry>
         <inputEntry id="UnaryTests_0p9tw8i">
           <text>]20000..100000]</text>
-        </inputEntry>
-        <inputEntry id="UnaryTests_0a3cvfc">
-          <text></text>
         </inputEntry>
         <outputEntry id="LiteralExpression_05rzlbo">
           <text>"DU"</text>
@@ -770,9 +638,6 @@
         <inputEntry id="UnaryTests_1mrfjca">
           <text>[1..20000]</text>
         </inputEntry>
-        <inputEntry id="UnaryTests_0b2p0wu">
-          <text></text>
-        </inputEntry>
         <outputEntry id="LiteralExpression_1h263vn">
           <text>"DU"</text>
         </outputEntry>
@@ -789,9 +654,6 @@
         </inputEntry>
         <inputEntry id="UnaryTests_03qiuwm">
           <text>&gt;=10000000</text>
-        </inputEntry>
-        <inputEntry id="UnaryTests_0yvm79r">
-          <text></text>
         </inputEntry>
         <outputEntry id="LiteralExpression_1k9ndt7">
           <text>"VR BLS Netz AG"</text>
@@ -810,9 +672,6 @@
         <inputEntry id="UnaryTests_0q74m73">
           <text>[2000000..10000000[</text>
         </inputEntry>
-        <inputEntry id="UnaryTests_1wdiz5z">
-          <text></text>
-        </inputEntry>
         <outputEntry id="LiteralExpression_122p9xt">
           <text>"GL"</text>
         </outputEntry>
@@ -829,9 +688,6 @@
         </inputEntry>
         <inputEntry id="UnaryTests_1a3jjql">
           <text>[100000..2000000[</text>
-        </inputEntry>
-        <inputEntry id="UnaryTests_1heoynb">
-          <text></text>
         </inputEntry>
         <outputEntry id="LiteralExpression_1an103p">
           <text>"GB+F"</text>
@@ -850,9 +706,6 @@
         <inputEntry id="UnaryTests_1corlnw">
           <text>&gt;=10000000</text>
         </inputEntry>
-        <inputEntry id="UnaryTests_1j0g2rh">
-          <text></text>
-        </inputEntry>
         <outputEntry id="LiteralExpression_0bjpdi4">
           <text>"GB+F"</text>
         </outputEntry>
@@ -869,9 +722,6 @@
         </inputEntry>
         <inputEntry id="UnaryTests_0g4z9mt">
           <text>[2000000..10000000[</text>
-        </inputEntry>
-        <inputEntry id="UnaryTests_1arv5ht">
-          <text></text>
         </inputEntry>
         <outputEntry id="LiteralExpression_0r6pvvc">
           <text>"GB"</text>
@@ -890,9 +740,6 @@
         <inputEntry id="UnaryTests_0vyvh0v">
           <text>]100000..2000000[</text>
         </inputEntry>
-        <inputEntry id="UnaryTests_0rvu1c2">
-          <text></text>
-        </inputEntry>
         <outputEntry id="LiteralExpression_1n2pmgf">
           <text>"DU"</text>
         </outputEntry>
@@ -910,9 +757,6 @@
         <inputEntry id="UnaryTests_0gwc6fk">
           <text>]20000..100000]</text>
         </inputEntry>
-        <inputEntry id="UnaryTests_1xnkhlg">
-          <text></text>
-        </inputEntry>
         <outputEntry id="LiteralExpression_037rtxr">
           <text>"DU"</text>
         </outputEntry>
@@ -929,9 +773,6 @@
         </inputEntry>
         <inputEntry id="UnaryTests_0z3hrqo">
           <text>[1..20000]</text>
-        </inputEntry>
-        <inputEntry id="UnaryTests_1u2poym">
-          <text></text>
         </inputEntry>
         <outputEntry id="LiteralExpression_0qeei4b">
           <text>"DU"</text>

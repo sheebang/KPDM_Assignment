@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:camunda="http://camunda.org/schema/1.0/bpmn" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Definitions_00vxnmo" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Modeler" exporterVersion="1.14.0">
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:camunda="http://camunda.org/schema/1.0/bpmn" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Definitions_00vxnmo" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Modeler" exporterVersion="1.15.0">
   <bpmn:process id="Process_1_KPDM" isExecutable="true">
     <bpmn:startEvent id="StartEvent_1">
       <bpmn:outgoing>SequenceFlow_1chj0l4</bpmn:outgoing>
@@ -106,8 +106,10 @@ execution.setVariable("combinedResult", combinedResult)</camunda:script>
     <bpmn:userTask id="Task_02bube5" name="Planungs und Kontroll Kompetenz auswählen" camunda:assignee="demo">
       <bpmn:extensionElements>
         <camunda:formData>
-          <camunda:formField id="FormField_1j1miq0" label="Kompetenz Planung und Kontrolle" type="enum" defaultValue="_2.8">
-            <camunda:value id="_2.8" name="Studien und Projekte (unter Vorbehalt der Finanzkompetenzen Ziff. 3)" />
+          <camunda:formField id="FormField_1j1miq0" label="Kompetenz Planung und Kontrolle" type="enum" defaultValue="_2.8a">
+            <camunda:value id="_2.8a" name="Gesamtunternehmerisch - Studien und Projekte (unter Vorbehalt der Finanzkompetenzen Ziff. 3)" />
+            <camunda:value id="_2.8b" name="Geschäftsbereichsübergreifend - Studien und Projekte (unter Vorbehalt der Finanzkompetenzen Ziff. 3)" />
+            <camunda:value id="_2.8c" name="Bereichsintern - Studien und Projekte (unter Vorbehalt der Finanzkompetenzen Ziff. 3)" />
             <camunda:value id="_2.8Infra" name="Freigabe Ausführungskredite (Gesamtkredit bereits durch zuständiges Gremium nach GZO freigegeben)." />
           </camunda:formField>
         </camunda:formData>
@@ -379,7 +381,7 @@ log.info("Collection.elements " + collection );</bpmn:script>
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNShape id="UserTask_1cipkl2_di" bpmnElement="Task_17q1r81">
-        <dc:Bounds x="1296" y="414" width="100" height="80" />
+        <dc:Bounds x="1280" y="414" width="100" height="80" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="ExclusiveGateway_19greuu_di" bpmnElement="ExclusiveGateway_19greuu" isMarkerVisible="true">
         <dc:Bounds x="1544" y="358" width="50" height="50" />
@@ -452,7 +454,7 @@ log.info("Collection.elements " + collection );</bpmn:script>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="SequenceFlow_1kxvojh_di" bpmnElement="SequenceFlow_1kxvojh">
         <di:waypoint x="1241" y="454" />
-        <di:waypoint x="1296" y="454" />
+        <di:waypoint x="1280" y="454" />
         <bpmndi:BPMNLabel>
           <dc:Bounds x="1224" y="433" width="90" height="12" />
         </bpmndi:BPMNLabel>
@@ -465,7 +467,7 @@ log.info("Collection.elements " + collection );</bpmn:script>
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="SequenceFlow_1goe95y_di" bpmnElement="SequenceFlow_1goe95y">
-        <di:waypoint x="1396" y="454" />
+        <di:waypoint x="1380" y="454" />
         <di:waypoint x="1418" y="454" />
         <bpmndi:BPMNLabel>
           <dc:Bounds x="1362" y="433" width="90" height="12" />

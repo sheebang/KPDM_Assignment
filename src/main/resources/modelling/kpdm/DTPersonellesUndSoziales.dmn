@@ -10,7 +10,6 @@
       <output id="output_1" label="Unterschriftspartei 1" name="Signer1" typeRef="string" />
       <output id="OutputClause_1uaypux" label="Unterschriftspartei 2" name="Signer2" typeRef="string" />
       <output id="OutputClause_019ka9t" label="Unterschriftspartei 3" name="Signer3" typeRef="string" />
-      <output id="OutputClause_0l61m9m" label="Unterschriftspartei 4" name="Signer4" typeRef="string" />
       <rule id="DecisionRule_0lzhfow">
         <inputEntry id="UnaryTests_1cl5hpw">
           <text>"_4.12"</text>
@@ -19,12 +18,9 @@
           <text>"GB"</text>
         </outputEntry>
         <outputEntry id="LiteralExpression_0vhxtbf">
-          <text>"ProF"</text>
-        </outputEntry>
-        <outputEntry id="LiteralExpression_1ssdtaw">
           <text></text>
         </outputEntry>
-        <outputEntry id="LiteralExpression_1ygwown">
+        <outputEntry id="LiteralExpression_1ssdtaw">
           <text></text>
         </outputEntry>
       </rule>
@@ -36,12 +32,9 @@
           <text>"GB"</text>
         </outputEntry>
         <outputEntry id="LiteralExpression_1wbw9l9">
-          <text>"ProF"</text>
-        </outputEntry>
-        <outputEntry id="LiteralExpression_1bhvilx">
           <text></text>
         </outputEntry>
-        <outputEntry id="LiteralExpression_04xb75v">
+        <outputEntry id="LiteralExpression_1bhvilx">
           <text></text>
         </outputEntry>
       </rule>
@@ -56,9 +49,6 @@
           <text>"DU"</text>
         </outputEntry>
         <outputEntry id="LiteralExpression_0qg90jx">
-          <text>"ProF"</text>
-        </outputEntry>
-        <outputEntry id="LiteralExpression_0k1yae6">
           <text>"K3"</text>
         </outputEntry>
       </rule>
@@ -73,9 +63,6 @@
           <text>"DU"</text>
         </outputEntry>
         <outputEntry id="LiteralExpression_1737ifb">
-          <text>"ProF"</text>
-        </outputEntry>
-        <outputEntry id="LiteralExpression_1cy7kzk">
           <text>"K3"</text>
         </outputEntry>
       </rule>
